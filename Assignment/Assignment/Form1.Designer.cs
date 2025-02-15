@@ -33,6 +33,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txtUsername = new System.Windows.Forms.TextBox();
             this.txtPassword = new System.Windows.Forms.TextBox();
+            this.btnContinue = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -77,11 +78,21 @@
             this.txtPassword.Size = new System.Drawing.Size(100, 22);
             this.txtPassword.TabIndex = 4;
             // 
+            // btnContinue
+            // 
+            this.btnContinue.Location = new System.Drawing.Point(635, 281);
+            this.btnContinue.Name = "btnContinue";
+            this.btnContinue.Size = new System.Drawing.Size(130, 45);
+            this.btnContinue.TabIndex = 5;
+            this.btnContinue.Text = "Continue";
+            this.btnContinue.UseVisualStyleBackColor = true;
+            // 
             // FormLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1360, 448);
+            this.Controls.Add(this.btnContinue);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.txtUsername);
             this.Controls.Add(this.label3);
@@ -101,6 +112,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtUsername;
         private System.Windows.Forms.TextBox txtPassword;
+        private System.Windows.Forms.Button btnContinue;
     }
 }
 
