@@ -16,5 +16,10 @@ namespace Assignment
         {
             InitializeComponent();
         }
+
+        private void btnContinue_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
