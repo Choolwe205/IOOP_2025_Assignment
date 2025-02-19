@@ -84,7 +84,7 @@
             this.btnContinue.Name = "btnContinue";
             this.btnContinue.Size = new System.Drawing.Size(130, 45);
             this.btnContinue.TabIndex = 5;
-            this.btnContinue.Text = "Login";
+            this.btnContinue.Text = "Enter";
             this.btnContinue.UseVisualStyleBackColor = true;
             this.btnContinue.Click += new System.EventHandler(this.btnContinue_Click);
             // 
