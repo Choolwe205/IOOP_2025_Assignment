@@ -1,0 +1,16 @@
+C:\Users\HP 15\OneDrive - Asia Pacific University\Documents\School Materials\Level 1\Semester 2\Introduction to IOOP\Practice\Classespractice\Classespractice\bin\Debug\Classespractice.exe.config
+C:\Users\HP 15\OneDrive - Asia Pacific University\Documents\School Materials\Level 1\Semester 2\Introduction to IOOP\Practice\Classespractice\Classespractice\bin\Debug\Classespractice.exe
+C:\Users\HP 15\OneDrive - Asia Pacific University\Documents\School Materials\Level 1\Semester 2\Introduction to IOOP\Practice\Classespractice\Classespractice\bin\Debug\Classespractice.pdb
+C:\Users\HP 15\OneDrive - Asia Pacific University\Documents\School Materials\Level 1\Semester 2\Introduction to IOOP\Practice\Classespractice\Classespractice\obj\Debug\Classespractice.csproj.AssemblyReference.cache
+C:\Users\HP 15\OneDrive - Asia Pacific University\Documents\School Materials\Level 1\Semester 2\Introduction to IOOP\Practice\Classespractice\Classespractice\obj\Debug\Classespractice.Properties.Resources.resources
+C:\Users\HP 15\OneDrive - Asia Pacific University\Documents\School Materials\Level 1\Semester 2\Introduction to IOOP\Practice\Classespractice\Classespractice\obj\Debug\Classespractice.csproj.GenerateResource.cache
+C:\Users\HP 15\OneDrive - Asia Pacific University\Documents\School Materials\Level 1\Semester 2\Introduction to IOOP\Practice\Classespractice\Classespractice\obj\Debug\Classespractice.csproj.CoreCompileInputs.cache
+C:\Users\HP 15\OneDrive - Asia Pacific University\Documents\School Materials\Level 1\Semester 2\Introduction to IOOP\Practice\Classespractice\Classespractice\obj\Debug\Classespractice.exe
+C:\Users\HP 15\OneDrive - Asia Pacific University\Documents\School Materials\Level 1\Semester 2\Introduction to IOOP\Practice\Classespractice\Classespractice\obj\Debug\Classespractice.pdb
+C:\Users\HP 15\OneDrive - Asia Pacific University\Documents\School Materials\Level 1\Semester 2\Introduction to IOOP\Practice\Classespractice\Classespractice\obj\Debug\Classespractice.Customer_Index.resources
+C:\Users\HP 15\OneDrive - Asia Pacific University\Documents\School Materials\Level 1\Semester 2\Introduction to IOOP\Practice\Classespractice\Classespractice\obj\Debug\Classespractice.Customer_Reservation.resources
+C:\Users\HP 15\OneDrive - Asia Pacific University\Documents\School Materials\Level 1\Semester 2\Introduction to IOOP\Practice\Classespractice\Classespractice\obj\Debug\Classespractice.Customer_Menu.resources
+C:\Users\HP 15\OneDrive - Asia Pacific University\Documents\School Materials\Level 1\Semester 2\Introduction to IOOP\Practice\Classespractice\Classespractice\obj\Debug\Classespractice.frmMalaysianMenu.resources
+C:\Users\HP 15\OneDrive - Asia Pacific University\Documents\School Materials\Level 1\Semester 2\Introduction to IOOP\Practice\Classespractice\Classespractice\obj\Debug\Classespractice.frmWesternMenu.resources
+C:\Users\HP 15\OneDrive - Asia Pacific University\Documents\School Materials\Level 1\Semester 2\Introduction to IOOP\Practice\Classespractice\Classespractice\obj\Debug\Classespractice.frmChineseMenu.resources
+C:\Users\HP 15\OneDrive - Asia Pacific University\Documents\School Materials\Level 1\Semester 2\Introduction to IOOP\Practice\Classespractice\Classespractice\obj\Debug\Classespractice.FrmIndianMenu.resources
