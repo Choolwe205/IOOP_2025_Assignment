@@ -1,0 +1,10 @@
+C:\Users\hp\OneDrive\Desktop\IOOP assignment\IOOP assignment\bin\Debug\IOOP assignment.exe.config
+C:\Users\hp\OneDrive\Desktop\IOOP assignment\IOOP assignment\bin\Debug\IOOP assignment.exe
+C:\Users\hp\OneDrive\Desktop\IOOP assignment\IOOP assignment\bin\Debug\IOOP assignment.pdb
+C:\Users\hp\OneDrive\Desktop\IOOP assignment\IOOP assignment\obj\Debug\IOOP assignment.csproj.AssemblyReference.cache
+C:\Users\hp\OneDrive\Desktop\IOOP assignment\IOOP assignment\obj\Debug\IOOP_assignment.Form1.resources
+C:\Users\hp\OneDrive\Desktop\IOOP assignment\IOOP assignment\obj\Debug\IOOP_assignment.Properties.Resources.resources
+C:\Users\hp\OneDrive\Desktop\IOOP assignment\IOOP assignment\obj\Debug\IOOP assignment.csproj.GenerateResource.cache
+C:\Users\hp\OneDrive\Desktop\IOOP assignment\IOOP assignment\obj\Debug\IOOP assignment.csproj.CoreCompileInputs.cache
+C:\Users\hp\OneDrive\Desktop\IOOP assignment\IOOP assignment\obj\Debug\IOOP assignment.exe
+C:\Users\hp\OneDrive\Desktop\IOOP assignment\IOOP assignment\obj\Debug\IOOP assignment.pdb
