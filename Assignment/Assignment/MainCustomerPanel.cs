@@ -16,5 +16,16 @@ namespace Assignment
         {
             InitializeComponent();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            CustomerReservation newForm = new CustomerReservation();
+            newForm.FormBorderStyle = FormBorderStyle.None;
+            newForm.TopLevel = false; // Allows the form to be embedded in a container
+            newForm.Dock = DockStyle.Fill; // Makes it fill the panel
+            pmainpanel.Controls.Clear(); // Removes previous content
+            pmainpanel.Controls.Add(newForm);
+            newForm.Show();
+        }
     }
 }
