@@ -35,6 +35,7 @@
             this.txtUsername = new System.Windows.Forms.TextBox();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.btnContinue = new System.Windows.Forms.Button();
+            this.Sign_up_button = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -43,7 +44,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Stencil", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(99, 57);
+            this.label1.Location = new System.Drawing.Point(139, 45);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(439, 44);
             this.label1.TabIndex = 0;
@@ -78,10 +79,11 @@
             // 
             this.txtUsername.BackColor = System.Drawing.Color.OrangeRed;
             this.txtUsername.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtUsername.Location = new System.Drawing.Point(248, 226);
+            this.txtUsername.Location = new System.Drawing.Point(248, 224);
             this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(166, 22);
+            this.txtUsername.Size = new System.Drawing.Size(360, 22);
             this.txtUsername.TabIndex = 3;
+            this.txtUsername.TextChanged += new System.EventHandler(this.txtUsername_TextChanged);
             // 
             // txtPassword
             // 
@@ -89,7 +91,7 @@
             this.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtPassword.Location = new System.Drawing.Point(248, 264);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(166, 22);
+            this.txtPassword.Size = new System.Drawing.Size(360, 22);
             this.txtPassword.TabIndex = 4;
             // 
             // btnContinue
@@ -97,13 +99,25 @@
             this.btnContinue.BackColor = System.Drawing.Color.OrangeRed;
             this.btnContinue.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnContinue.ForeColor = System.Drawing.Color.DarkGreen;
-            this.btnContinue.Location = new System.Drawing.Point(182, 357);
+            this.btnContinue.Location = new System.Drawing.Point(137, 345);
             this.btnContinue.Name = "btnContinue";
             this.btnContinue.Size = new System.Drawing.Size(130, 45);
             this.btnContinue.TabIndex = 5;
             this.btnContinue.Text = "Log In";
             this.btnContinue.UseVisualStyleBackColor = false;
             this.btnContinue.Click += new System.EventHandler(this.btnContinue_Click);
+            // 
+            // Sign_up_button
+            // 
+            this.Sign_up_button.BackColor = System.Drawing.Color.OrangeRed;
+            this.Sign_up_button.ForeColor = System.Drawing.Color.DarkGreen;
+            this.Sign_up_button.Location = new System.Drawing.Point(318, 345);
+            this.Sign_up_button.Name = "Sign_up_button";
+            this.Sign_up_button.Size = new System.Drawing.Size(130, 45);
+            this.Sign_up_button.TabIndex = 6;
+            this.Sign_up_button.Text = "Sign Up";
+            this.Sign_up_button.UseVisualStyleBackColor = false;
+            this.Sign_up_button.Click += new System.EventHandler(this.Sign_up_button_Click);
             // 
             // FormLogin
             // 
@@ -112,6 +126,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1373, 724);
+            this.Controls.Add(this.Sign_up_button);
             this.Controls.Add(this.btnContinue);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.txtUsername);
@@ -134,6 +149,7 @@
         private System.Windows.Forms.TextBox txtUsername;
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.Button btnContinue;
+        private System.Windows.Forms.Button Sign_up_button;
     }
 }
 

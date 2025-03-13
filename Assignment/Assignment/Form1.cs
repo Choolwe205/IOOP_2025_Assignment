@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
+using System.Configuration;
 
 namespace Assignment
 {
@@ -24,12 +26,24 @@ namespace Assignment
 
         private void FormLogin_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void txtUsername_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void Sign_up_button_Click(object sender, EventArgs e)
+        {
+            Sign_up_form Sign_Up_Form = new Sign_up_form(); 
+            Sign_Up_Form.Show();
+            
         }
     }
 }
