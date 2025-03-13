@@ -10,19 +10,14 @@ using System.Windows.Forms;
 
 namespace Assignment
 {
-    public partial class CustomerReservation : Form
+    public partial class CustomerViewReservation : Form
     {
-        public CustomerReservation()
+        public CustomerViewReservation()
         {
             InitializeComponent();
         }
 
-        private void btnViewPrice_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void btnConfrim_Click(object sender, EventArgs e)
+        private void btnReservation1_Click(object sender, EventArgs e)
         {
             CustomerReservationDetails newForm = new CustomerReservationDetails();
             newForm.ShowDialog();

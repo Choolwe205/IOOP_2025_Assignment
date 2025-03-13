@@ -193,6 +193,7 @@
             this.btnConfrim.TabIndex = 12;
             this.btnConfrim.Text = "Confirm";
             this.btnConfrim.UseVisualStyleBackColor = false;
+            this.btnConfrim.Click += new System.EventHandler(this.btnConfrim_Click);
             // 
             // groupBox1
             // 
@@ -312,6 +313,7 @@
             this.btnViewPrice.TabIndex = 8;
             this.btnViewPrice.Text = "View Price";
             this.btnViewPrice.UseVisualStyleBackColor = false;
+            this.btnViewPrice.Click += new System.EventHandler(this.btnViewPrice_Click);
             // 
             // label6
             // 

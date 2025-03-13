@@ -108,6 +108,7 @@
             this.button5.TabIndex = 4;
             this.button5.Text = " Edit Account\r\n Information";
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // panel6
             // 
@@ -151,6 +152,7 @@
             this.ViewOrder.TabIndex = 1;
             this.ViewOrder.Text = "View Order";
             this.ViewOrder.UseVisualStyleBackColor = false;
+            this.ViewOrder.Click += new System.EventHandler(this.ViewOrder_Click);
             // 
             // panel4
             // 
@@ -172,6 +174,7 @@
             this.Order.TabIndex = 0;
             this.Order.Text = "Order";
             this.Order.UseVisualStyleBackColor = false;
+            this.Order.Click += new System.EventHandler(this.Order_Click);
             // 
             // pmainpanel
             // 
@@ -200,6 +203,7 @@
             this.button4.TabIndex = 3;
             this.button4.Text = "View Reservation";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // pictureBox2
             // 
@@ -214,7 +218,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Assignment.Properties.Resources.Screenshot_2025_03_13_220830;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Location = new System.Drawing.Point(9, 3);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(402, 190);
             this.pictureBox1.TabIndex = 0;
