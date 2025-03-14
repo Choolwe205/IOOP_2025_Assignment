@@ -186,6 +186,10 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>IOOP_Database.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\icons8-cash-33.png" />
+    <None Include="Resources\icons8-cash-20.png" />
+    <None Include="Resources\icons8-cola-30.png" />
+    <None Include="Resources\icons8-french-fries-30.png" />
     <None Include="Resources\icons8-restaurant-62.png" />
     <None Include="Resources\icons8-restaurant-50 %281%29.png" />
     <None Include="Resources\Screenshot 2025-03-13 220830.png" />

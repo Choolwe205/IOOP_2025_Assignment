@@ -27,5 +27,10 @@ namespace Assignment
             CustomerReservationDetails newForm = new CustomerReservationDetails();
             newForm.ShowDialog();
         }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

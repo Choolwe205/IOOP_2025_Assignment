@@ -180,7 +180,7 @@
             // 
             this.pmainpanel.Location = new System.Drawing.Point(418, 9);
             this.pmainpanel.Name = "pmainpanel";
-            this.pmainpanel.Size = new System.Drawing.Size(812, 540);
+            this.pmainpanel.Size = new System.Drawing.Size(1029, 540);
             this.pmainpanel.TabIndex = 2;
             // 
             // panel7
@@ -229,7 +229,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(68)))), ((int)(((byte)(60)))));
-            this.ClientSize = new System.Drawing.Size(1256, 565);
+            this.ClientSize = new System.Drawing.Size(1459, 609);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.pmainpanel);
             this.Controls.Add(this.panel2);
