@@ -41,9 +41,6 @@
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.btnConfrim = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label14 = new System.Windows.Forms.Label();
-            this.button19 = new System.Windows.Forms.Button();
-            this.button20 = new System.Windows.Forms.Button();
             this.label12 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.lblReservationPrice = new System.Windows.Forms.Label();
@@ -60,9 +57,11 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
             // label13
@@ -198,9 +197,7 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(68)))), ((int)(((byte)(60)))));
-            this.groupBox1.Controls.Add(this.label14);
-            this.groupBox1.Controls.Add(this.button19);
-            this.groupBox1.Controls.Add(this.button20);
+            this.groupBox1.Controls.Add(this.numericUpDown1);
             this.groupBox1.Controls.Add(this.label12);
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.lblReservationPrice);
@@ -224,41 +221,6 @@
             this.groupBox1.TabIndex = 11;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Reservation Details";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.Color.White;
-            this.label14.Location = new System.Drawing.Point(220, 242);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(17, 18);
-            this.label14.TabIndex = 38;
-            this.label14.Text = "0";
-            // 
-            // button19
-            // 
-            this.button19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(138)))), ((int)(((byte)(0)))));
-            this.button19.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button19.ForeColor = System.Drawing.Color.White;
-            this.button19.Location = new System.Drawing.Point(252, 240);
-            this.button19.Name = "button19";
-            this.button19.Size = new System.Drawing.Size(22, 24);
-            this.button19.TabIndex = 37;
-            this.button19.Text = "-";
-            this.button19.UseVisualStyleBackColor = false;
-            // 
-            // button20
-            // 
-            this.button20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(138)))), ((int)(((byte)(0)))));
-            this.button20.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button20.ForeColor = System.Drawing.Color.White;
-            this.button20.Location = new System.Drawing.Point(187, 240);
-            this.button20.Name = "button20";
-            this.button20.Size = new System.Drawing.Size(27, 24);
-            this.button20.TabIndex = 36;
-            this.button20.Text = "+";
-            this.button20.UseVisualStyleBackColor = false;
             // 
             // label12
             // 
@@ -430,6 +392,13 @@
             this.dateTimePicker1.Size = new System.Drawing.Size(225, 22);
             this.dateTimePicker1.TabIndex = 1;
             // 
+            // numericUpDown1
+            // 
+            this.numericUpDown1.Location = new System.Drawing.Point(189, 239);
+            this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.Size = new System.Drawing.Size(120, 22);
+            this.numericUpDown1.TabIndex = 25;
+            // 
             // CustomerReservation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -447,6 +416,7 @@
             this.groupBox3.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -467,9 +437,6 @@
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Button btnConfrim;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Button button19;
-        private System.Windows.Forms.Button button20;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label lblReservationPrice;
@@ -486,5 +453,6 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.NumericUpDown numericUpDown1;
     }
 }
