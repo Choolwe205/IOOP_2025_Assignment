@@ -33,18 +33,22 @@ namespace Assignment
             else if (page == "Chef")
             {
                 MessageBox.Show("You are a Chef");
+                return counter = 19;
             }
             else if (page == "Reservation Coordinator")
             {
                 MessageBox.Show("You are a Reservation Coorrdinator");
+                return counter = 19;
             }
             else if (page == "Manager")
             {
                 MessageBox.Show("You are a Manager");
+                return counter = 19;
             }
             else if (page == "Admin")
             {
                 MessageBox.Show("You are an Admin");
+                return counter = 19;
             }
             else if (page == "Doesn't Exist")
             {
