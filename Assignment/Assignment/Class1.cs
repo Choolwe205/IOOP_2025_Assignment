@@ -135,6 +135,7 @@ namespace Assignment
             return security;
         }
 
+
         //CHECKS THE VALIDITY OF THE PHONE NUMBER
         public string valid_number()
         {
@@ -163,6 +164,7 @@ namespace Assignment
         }
 
 
+
         //CHECK THE DATABASE IF THE USER EXISTS 
         public int Email_existence()
         {
@@ -179,6 +181,8 @@ namespace Assignment
                 }
             }
         }
+
+
 
         //ADDS THE CUSTOMER
         public void add_customers()

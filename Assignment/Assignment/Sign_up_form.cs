@@ -11,6 +11,8 @@ using System.Data.SqlClient;
 using System.Configuration;
 using System.Threading;
 
+
+
 namespace Assignment
 {
     public partial class Sign_up_form : Form

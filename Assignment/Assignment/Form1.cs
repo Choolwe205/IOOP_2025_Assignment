@@ -9,11 +9,63 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Configuration;
+using System.Drawing.Printing;
+using System.Threading;
+using System.Diagnostics.PerformanceData;
 
 namespace Assignment
 {
     public partial class FormLogin : Form
     {
+        int count = 0;
+
+
+        private int logging_in(int counter)
+        {
+            Login login = new Login(txtUsername.Text, txtPassword.Text);
+            string page = login.Login_algorithm();
+            if (page == "Customer")
+            {
+                MessageBox.Show("You are Customer");
+                return counter = 19;
+
+            }
+            else if (page == "Chef")
+            {
+                MessageBox.Show("You are a Chef");
+            }
+            else if (page == "Reservation Coordinator")
+            {
+                MessageBox.Show("You are a Reservation Coorrdinator");
+            }
+            else if (page == "Manager")
+            {
+                MessageBox.Show("You are a Manager");
+            }
+            else if (page == "Admin")
+            {
+                MessageBox.Show("You are an Admin");
+            }
+            else if (page == "Doesn't Exist")
+            {
+                MessageBox.Show("The Given Email Does Not Exist");
+                return counter += 1;
+            }
+            else if (page == "Invalid Password")
+            {
+                MessageBox.Show("The Password Is Invalid");
+                return counter += 1;
+            }
+            else
+            {
+                return counter;
+            }
+        }
+
+
+
+
+
         public FormLogin()
         {
             InitializeComponent();
@@ -21,7 +73,15 @@ namespace Assignment
 
         private void btnContinue_Click(object sender, EventArgs e)
         {
-
+            if (count < 5)
+            {
+                count = logging_in(count);
+            }
+            else if (count >= 5)
+            {
+                MessageBox.Show("Multiple Log In Detected");
+                this.Close();
+            }
         }
 
         private void FormLogin_Load(object sender, EventArgs e)
