@@ -339,7 +339,7 @@
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
             "Decorations-RM 45.00"});
-            this.comboBox1.Location = new System.Drawing.Point(189, 165);
+            this.comboBox1.Location = new System.Drawing.Point(189, 160);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(229, 24);
             this.comboBox1.TabIndex = 8;
