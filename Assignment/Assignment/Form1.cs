@@ -13,13 +13,16 @@ using System.Drawing.Printing;
 using System.Threading;
 using System.Diagnostics.PerformanceData;
 
+
+
 namespace Assignment
 {
     public partial class FormLogin : Form
     {
+        //FOR THE NUMBER OF TRIES
         int count = 0;
 
-
+        //LOGGING IN FUNCTIONS
         private int logging_in(int counter)
         {
             Login login = new Login(txtUsername.Text, txtPassword.Text);
@@ -67,6 +70,8 @@ namespace Assignment
         }
 
 
+        
+
 
 
 
@@ -77,6 +82,8 @@ namespace Assignment
 
         private void btnContinue_Click(object sender, EventArgs e)
         {
+
+            //CHECK RETRIES
             if (count < 5)
             {
                 count = logging_in(count);
@@ -91,6 +98,7 @@ namespace Assignment
         private void FormLogin_Load(object sender, EventArgs e)
         {
             
+
         }
 
         private void label1_Click(object sender, EventArgs e)

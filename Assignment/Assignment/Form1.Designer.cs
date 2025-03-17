@@ -99,7 +99,7 @@
             this.btnContinue.BackColor = System.Drawing.Color.OrangeRed;
             this.btnContinue.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnContinue.ForeColor = System.Drawing.Color.DarkGreen;
-            this.btnContinue.Location = new System.Drawing.Point(137, 345);
+            this.btnContinue.Location = new System.Drawing.Point(147, 345);
             this.btnContinue.Name = "btnContinue";
             this.btnContinue.Size = new System.Drawing.Size(130, 45);
             this.btnContinue.TabIndex = 5;
