@@ -135,7 +135,6 @@ namespace Assignment
             return security;
         }
 
-
         //CHECKS THE VALIDITY OF THE PHONE NUMBER
         public string valid_number()
         {
@@ -164,11 +163,10 @@ namespace Assignment
         }
 
 
-
         //CHECK THE DATABASE IF THE USER EXISTS 
         public int Email_existence()
         {
-            string connection_string = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\ranja\\Source\\Repos\\IOOP_2025_Assignment\\Assignment\\Assignment\\IOOP_Database.mdf;Integrated Security=True";
+            string connection_string = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\hp\\Source\\Repos\\IOOP_2025_Assignment\\Assignment\\Assignment\\IOOP_Database.mdf;Integrated Security=True";
             using (SqlConnection connection = new SqlConnection(connection_string))
             {
                 connection.Open();
@@ -181,8 +179,6 @@ namespace Assignment
                 }
             }
         }
-
-
 
         //ADDS THE CUSTOMER
         public void add_customers()
