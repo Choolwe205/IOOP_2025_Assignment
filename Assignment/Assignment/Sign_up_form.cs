@@ -98,5 +98,10 @@ namespace Assignment
             }
             return proceed;
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
