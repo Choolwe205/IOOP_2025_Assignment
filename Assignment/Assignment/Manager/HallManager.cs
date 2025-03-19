@@ -8,30 +8,47 @@ namespace Assignment.Manager
     public class HallManager
     {
         private string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\CYBORG\source\repos\IOOP_2025_Assignment\Assignment\Assignment\IOOP_Database.mdf;Integrated Security=True";
-
         public DataTable GetAllHalls()
         {
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
-                string query = "SELECT * FROM Halls";
+                string query = "SELECT HallID, Capacity, Availability FROM Halls"; // Explicitly include HallID
                 SqlDataAdapter adapter = new SqlDataAdapter(query, conn);
                 DataTable dt = new DataTable();
                 adapter.Fill(dt);
                 return dt;
             }
         }
+        public DataTable GetHallByID(int hallID)
+        {
+            string query = "SELECT * FROM Halls WHERE HallID = @HallID"; // Ensure correct column name
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@HallID", hallID);
+                    SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+                    DataTable dt = new DataTable();
+                    adapter.Fill(dt);
+                    return dt;
+                }
+            }
+        }
+
 
         public void AddHall(int capacity)
         {
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
-                string query = "INSERT INTO Halls (Capacity, Availability) VALUES (@Capacity, 'Available')";
+                string query = "INSERT INTO Halls (Capacity, Availability) VALUES (@Capacity, 'Available'); SELECT SCOPE_IDENTITY();";
                 SqlCommand cmd = new SqlCommand(query, conn);
                 cmd.Parameters.AddWithValue("@Capacity", capacity);
 
                 conn.Open();
-                cmd.ExecuteNonQuery();
+                int newHallID = Convert.ToInt32(cmd.ExecuteScalar()); // Get the new auto-generated HallID
                 conn.Close();
+
+                MessageBox.Show($"Hall added successfully! Assigned Hall ID: {newHallID}", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 
