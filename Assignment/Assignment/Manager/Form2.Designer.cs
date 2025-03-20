@@ -59,7 +59,13 @@
             this.menuBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.menuTableAdapter1 = new Assignment.IOOP_DatabaseDataSet4TableAdapters.MenuTableAdapter();
             this.menuTableAdapter2 = new Assignment.IOOP_DatabaseDataSet5TableAdapters.MenuTableAdapter();
+            this.iOOP_DatabaseDataSet6 = new Assignment.IOOP_DatabaseDataSet6();
+            this.menuBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
+            this.menuTableAdapter3 = new Assignment.IOOP_DatabaseDataSet6TableAdapters.MenuTableAdapter();
             this.dgvMenu = new System.Windows.Forms.DataGridView();
+            this.iOOP_DatabaseDataSet7 = new Assignment.IOOP_DatabaseDataSet7();
+            this.menuBindingSource4 = new System.Windows.Forms.BindingSource(this.components);
+            this.menuTableAdapter4 = new Assignment.IOOP_DatabaseDataSet7TableAdapters.MenuTableAdapter();
             this.foodIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.descriptionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.priceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -71,7 +77,11 @@
             this.pnlEditItem.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iOOP_DatabaseDataSet4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.menuBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iOOP_DatabaseDataSet6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.menuBindingSource3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMenu)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iOOP_DatabaseDataSet7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.menuBindingSource4)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -310,6 +320,20 @@
             // 
             this.menuTableAdapter2.ClearBeforeFill = true;
             // 
+            // iOOP_DatabaseDataSet6
+            // 
+            this.iOOP_DatabaseDataSet6.DataSetName = "IOOP_DatabaseDataSet6";
+            this.iOOP_DatabaseDataSet6.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // menuBindingSource3
+            // 
+            this.menuBindingSource3.DataMember = "Menu";
+            this.menuBindingSource3.DataSource = this.iOOP_DatabaseDataSet6;
+            // 
+            // menuTableAdapter3
+            // 
+            this.menuTableAdapter3.ClearBeforeFill = true;
+            // 
             // dgvMenu
             // 
             this.dgvMenu.AllowUserToAddRows = false;
@@ -320,19 +344,33 @@
             this.foodIDDataGridViewTextBoxColumn,
             this.descriptionDataGridViewTextBoxColumn,
             this.priceDataGridViewTextBoxColumn});
-            this.dgvMenu.DataSource = this.menuBindingSource1;
-            this.dgvMenu.Location = new System.Drawing.Point(56, 196);
+            this.dgvMenu.DataSource = this.menuBindingSource4;
+            this.dgvMenu.Location = new System.Drawing.Point(12, 12);
             this.dgvMenu.Name = "dgvMenu";
             this.dgvMenu.ReadOnly = true;
             this.dgvMenu.RowHeadersWidth = 51;
             this.dgvMenu.RowTemplate.Height = 24;
-            this.dgvMenu.Size = new System.Drawing.Size(432, 151);
+            this.dgvMenu.Size = new System.Drawing.Size(442, 165);
             this.dgvMenu.TabIndex = 9;
+            // 
+            // iOOP_DatabaseDataSet7
+            // 
+            this.iOOP_DatabaseDataSet7.DataSetName = "IOOP_DatabaseDataSet7";
+            this.iOOP_DatabaseDataSet7.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // menuBindingSource4
+            // 
+            this.menuBindingSource4.DataMember = "Menu";
+            this.menuBindingSource4.DataSource = this.iOOP_DatabaseDataSet7;
+            // 
+            // menuTableAdapter4
+            // 
+            this.menuTableAdapter4.ClearBeforeFill = true;
             // 
             // foodIDDataGridViewTextBoxColumn
             // 
-            this.foodIDDataGridViewTextBoxColumn.DataPropertyName = "Food ID";
-            this.foodIDDataGridViewTextBoxColumn.HeaderText = "Food ID";
+            this.foodIDDataGridViewTextBoxColumn.DataPropertyName = "FoodID";
+            this.foodIDDataGridViewTextBoxColumn.HeaderText = "FoodID";
             this.foodIDDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.foodIDDataGridViewTextBoxColumn.Name = "foodIDDataGridViewTextBoxColumn";
             this.foodIDDataGridViewTextBoxColumn.ReadOnly = true;
@@ -363,14 +401,14 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1039, 668);
-            this.Controls.Add(this.pnlDeleteItem);
-            this.Controls.Add(this.pnlEditItem);
+            this.Controls.Add(this.dgvMenu);
             this.Controls.Add(this.pnlAddItem);
+            this.Controls.Add(this.pnlEditItem);
+            this.Controls.Add(this.pnlDeleteItem);
             this.Controls.Add(this.btnUpdateItem);
             this.Controls.Add(this.btnDeleteItem);
             this.Controls.Add(this.btnAddItems);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.dgvMenu);
             this.Name = "Form2";
             this.Text = "Manager-Edit Menu";
             this.Load += new System.EventHandler(this.Form2_Load);
@@ -384,7 +422,11 @@
             this.pnlEditItem.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iOOP_DatabaseDataSet4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.menuBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iOOP_DatabaseDataSet6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.menuBindingSource3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMenu)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iOOP_DatabaseDataSet7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.menuBindingSource4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -421,7 +463,13 @@
         private IOOP_DatabaseDataSet5 iOOP_DatabaseDataSet5;
         private System.Windows.Forms.BindingSource menuBindingSource2;
         private IOOP_DatabaseDataSet5TableAdapters.MenuTableAdapter menuTableAdapter2;
+        private IOOP_DatabaseDataSet6 iOOP_DatabaseDataSet6;
+        private System.Windows.Forms.BindingSource menuBindingSource3;
+        private IOOP_DatabaseDataSet6TableAdapters.MenuTableAdapter menuTableAdapter3;
         private System.Windows.Forms.DataGridView dgvMenu;
+        private IOOP_DatabaseDataSet7 iOOP_DatabaseDataSet7;
+        private System.Windows.Forms.BindingSource menuBindingSource4;
+        private IOOP_DatabaseDataSet7TableAdapters.MenuTableAdapter menuTableAdapter4;
         private System.Windows.Forms.DataGridViewTextBoxColumn foodIDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn descriptionDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn priceDataGridViewTextBoxColumn;

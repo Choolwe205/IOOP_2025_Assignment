@@ -13,13 +13,21 @@ namespace Assignment.Manager
         {
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
-                string query = "SELECT FoodID, Description, Price FROM Menu"; // Explicitly select columns
+                string query = "SELECT FoodID, Description, Price FROM Menu";
                 SqlDataAdapter adapter = new SqlDataAdapter(query, conn);
                 DataTable dt = new DataTable();
                 adapter.Fill(dt);
+
+                // Debugging: Print each row
+                foreach (DataRow row in dt.Rows)
+                {
+                    Console.WriteLine($"FoodID: {row["FoodID"]}, Description: {row["Description"]}, Price: {row["Price"]}");
+                }
+
                 return dt;
             }
         }
+
 
         public bool AddMenuItem(string description, decimal price)
         {

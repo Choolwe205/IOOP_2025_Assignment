@@ -20,7 +20,10 @@ namespace Assignment.Manager
 
         private void Form2_Load(object sender, EventArgs e)
         {
-         
+            // TODO: This line of code loads data into the 'iOOP_DatabaseDataSet7.Menu' table. You can move, or remove it, as needed.
+            this.menuTableAdapter4.Fill(this.iOOP_DatabaseDataSet7.Menu);
+
+
             LoadMenuItems();
 
         }
