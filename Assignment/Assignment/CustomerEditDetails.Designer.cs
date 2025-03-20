@@ -145,7 +145,9 @@
             // 
             // lstCustomerDetails
             // 
+            this.lstCustomerDetails.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(68)))), ((int)(((byte)(60)))));
             this.lstCustomerDetails.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lstCustomerDetails.ForeColor = System.Drawing.Color.White;
             this.lstCustomerDetails.FormattingEnabled = true;
             this.lstCustomerDetails.ItemHeight = 22;
             this.lstCustomerDetails.Location = new System.Drawing.Point(432, 15);
