@@ -47,7 +47,9 @@
             // 
             // OrderDetails
             // 
+            this.OrderDetails.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(68)))), ((int)(((byte)(60)))));
             this.OrderDetails.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.OrderDetails.ForeColor = System.Drawing.Color.White;
             this.OrderDetails.FormattingEnabled = true;
             this.OrderDetails.ItemHeight = 22;
             this.OrderDetails.Location = new System.Drawing.Point(125, 74);

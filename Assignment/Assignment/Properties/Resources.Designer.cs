@@ -123,9 +123,39 @@ namespace Assignment.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap images {
+            get {
+                object obj = ResourceManager.GetObject("images", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap kandar {
+            get {
+                object obj = ResourceManager.GetObject("kandar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Screenshot_2025_03_13_220830 {
             get {
                 object obj = ResourceManager.GetObject("Screenshot 2025-03-13 220830", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap wwwicons8_restaurant_62 {
+            get {
+                object obj = ResourceManager.GetObject("wwwicons8-restaurant-62", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -31,19 +31,19 @@
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.lstFood = new System.Windows.Forms.ListBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.lstDrinks = new System.Windows.Forms.ListBox();
             this.label5 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.label21 = new System.Windows.Forms.Label();
             this.textBox5 = new System.Windows.Forms.TextBox();
@@ -53,13 +53,13 @@
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -91,15 +91,25 @@
             // panel1
             // 
             this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Location = new System.Drawing.Point(3, 57);
+            this.panel1.Location = new System.Drawing.Point(-1, 98);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(39, 37);
             this.panel1.TabIndex = 2;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = global::Assignment.Properties.Resources.icons8_french_fries_30;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(39, 37);
+            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabStop = false;
+            // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.lstFood);
-            this.groupBox1.Location = new System.Drawing.Point(12, 104);
+            this.groupBox1.Location = new System.Drawing.Point(7, 99);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(284, 284);
             this.groupBox1.TabIndex = 3;
@@ -108,6 +118,8 @@
             // 
             // lstFood
             // 
+            this.lstFood.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(68)))), ((int)(((byte)(60)))));
+            this.lstFood.ForeColor = System.Drawing.Color.White;
             this.lstFood.FormattingEnabled = true;
             this.lstFood.ItemHeight = 16;
             this.lstFood.Location = new System.Drawing.Point(6, 21);
@@ -121,7 +133,7 @@
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(138)))), ((int)(((byte)(0)))));
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(48, 72);
+            this.label2.Location = new System.Drawing.Point(43, 67);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(55, 22);
             this.label2.TabIndex = 8;
@@ -145,7 +157,7 @@
             this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(138)))), ((int)(((byte)(0)))));
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(365, 72);
+            this.label4.Location = new System.Drawing.Point(360, 67);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(67, 22);
             this.label4.TabIndex = 11;
@@ -154,15 +166,25 @@
             // panel2
             // 
             this.panel2.Controls.Add(this.pictureBox2);
-            this.panel2.Location = new System.Drawing.Point(320, 57);
+            this.panel2.Location = new System.Drawing.Point(315, 52);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(39, 37);
             this.panel2.TabIndex = 10;
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox2.Image = global::Assignment.Properties.Resources.icons8_cola_30;
+            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(39, 37);
+            this.pictureBox2.TabIndex = 5;
+            this.pictureBox2.TabStop = false;
+            // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.lstDrinks);
-            this.groupBox2.Location = new System.Drawing.Point(322, 104);
+            this.groupBox2.Location = new System.Drawing.Point(317, 99);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(300, 284);
             this.groupBox2.TabIndex = 12;
@@ -171,6 +193,8 @@
             // 
             // lstDrinks
             // 
+            this.lstDrinks.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(68)))), ((int)(((byte)(60)))));
+            this.lstDrinks.ForeColor = System.Drawing.Color.White;
             this.lstDrinks.FormattingEnabled = true;
             this.lstDrinks.ItemHeight = 16;
             this.lstDrinks.Location = new System.Drawing.Point(6, 21);
@@ -207,26 +231,6 @@
             this.pictureBox3.Size = new System.Drawing.Size(39, 37);
             this.pictureBox3.TabIndex = 5;
             this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox2.Image = global::Assignment.Properties.Resources.icons8_cola_30;
-            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(39, 37);
-            this.pictureBox2.TabIndex = 5;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = global::Assignment.Properties.Resources.icons8_french_fries_30;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(39, 37);
-            this.pictureBox1.TabIndex = 5;
-            this.pictureBox1.TabStop = false;
             // 
             // groupBox3
             // 
@@ -333,13 +337,13 @@
             this.Name = "CustomerOrder";
             this.Text = "CustomerOrder";
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.ResumeLayout(false);
