@@ -35,7 +35,9 @@
             // 
             // lstReservation
             // 
+            this.lstReservation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(68)))), ((int)(((byte)(60)))));
             this.lstReservation.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lstReservation.ForeColor = System.Drawing.Color.White;
             this.lstReservation.FormattingEnabled = true;
             this.lstReservation.ItemHeight = 22;
             this.lstReservation.Location = new System.Drawing.Point(106, 61);
