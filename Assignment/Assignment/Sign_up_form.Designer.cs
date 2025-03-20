@@ -42,6 +42,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.Return = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -144,7 +145,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(129, 389);
+            this.button1.Location = new System.Drawing.Point(47, 389);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(177, 53);
             this.button1.TabIndex = 12;
@@ -154,7 +155,7 @@
             // 
             // Return
             // 
-            this.Return.Location = new System.Drawing.Point(354, 389);
+            this.Return.Location = new System.Drawing.Point(284, 389);
             this.Return.Name = "Return";
             this.Return.Size = new System.Drawing.Size(162, 53);
             this.Return.TabIndex = 13;
@@ -162,11 +163,22 @@
             this.Return.UseVisualStyleBackColor = true;
             this.Return.Click += new System.EventHandler(this.Return_Click);
             // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(520, 389);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(119, 53);
+            this.button2.TabIndex = 14;
+            this.button2.Text = "View";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // Sign_up_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1221, 785);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.Return);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label7);
@@ -204,5 +216,6 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button Return;
+        private System.Windows.Forms.Button button2;
     }
 }
