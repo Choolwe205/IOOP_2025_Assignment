@@ -25,7 +25,7 @@ namespace Assignment
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+
             string Email = Email_textbox.Text;
             string Name = Name_textbox.Text;
             string Password = Password_textbox.Text;
@@ -34,8 +34,12 @@ namespace Assignment
 
             Check_and_add_credentials(Email, Name, Password, Phone_number, Password_again);
 
+            //ADD TO CLASS
+            Current_User current_user = new Current_User(Name, Password, Phone_number, Email, "Customer");
+
 
         }
+            
 
         private void Return_Click(object sender, EventArgs e)
         {
@@ -55,9 +59,6 @@ namespace Assignment
             int Email_existence = Add_customers_class.Email_existence();
             string Number_Validity = Add_customers_class.valid_number();
             string Name_written = Add_customers_class.Name_check();
-
-
-
 
             if (Email_validity == "Invalid")
             {
@@ -97,6 +98,12 @@ namespace Assignment
                 MessageBox.Show("Sign up successful");
             }
             return proceed;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form2 form2 = new Form2();
+            form2.Show();
         }
     }
 }

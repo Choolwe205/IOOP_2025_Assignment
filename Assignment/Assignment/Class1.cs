@@ -121,7 +121,6 @@ namespace Assignment
                     {
                         special_characters_count += 1;
                     }
-
                 }
             }
             if (letters_count < 7)
