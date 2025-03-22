@@ -45,16 +45,20 @@
             this.label4 = new System.Windows.Forms.Label();
             this.txtDescription1 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtAddItem = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.pnlEditItem = new System.Windows.Forms.Panel();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtSaveEdit = new System.Windows.Forms.Button();
+            this.txtEditPrice = new System.Windows.Forms.TextBox();
+            this.txtEditID = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtEditDescription = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.pnlDeleteItem = new System.Windows.Forms.Panel();
+            this.btnDeleteItem1 = new System.Windows.Forms.Button();
+            this.txtDeleteItem = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
             this.iOOP_DatabaseDataSet4 = new Assignment.IOOP_DatabaseDataSet4();
             this.menuBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.menuTableAdapter1 = new Assignment.IOOP_DatabaseDataSet4TableAdapters.MenuTableAdapter();
@@ -63,25 +67,30 @@
             this.menuBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
             this.menuTableAdapter3 = new Assignment.IOOP_DatabaseDataSet6TableAdapters.MenuTableAdapter();
             this.dgvMenu = new System.Windows.Forms.DataGridView();
-            this.iOOP_DatabaseDataSet7 = new Assignment.IOOP_DatabaseDataSet7();
-            this.menuBindingSource4 = new System.Windows.Forms.BindingSource(this.components);
-            this.menuTableAdapter4 = new Assignment.IOOP_DatabaseDataSet7TableAdapters.MenuTableAdapter();
             this.foodIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.descriptionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.priceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.menuBindingSource4 = new System.Windows.Forms.BindingSource(this.components);
+            this.iOOP_DatabaseDataSet7 = new Assignment.IOOP_DatabaseDataSet7();
+            this.menuTableAdapter4 = new Assignment.IOOP_DatabaseDataSet7TableAdapters.MenuTableAdapter();
+            this.iOOP_DatabaseDataSet8 = new Assignment.IOOP_DatabaseDataSet8();
+            this.iOOP_DatabaseDataSet9 = new Assignment.IOOP_DatabaseDataSet9();
             ((System.ComponentModel.ISupportInitialize)(this.menuBindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iOOP_DatabaseDataSet5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.menuBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iOOP_DatabaseDataSet3)).BeginInit();
             this.pnlAddItem.SuspendLayout();
             this.pnlEditItem.SuspendLayout();
+            this.pnlDeleteItem.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iOOP_DatabaseDataSet4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.menuBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iOOP_DatabaseDataSet6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.menuBindingSource3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMenu)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iOOP_DatabaseDataSet7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.menuBindingSource4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iOOP_DatabaseDataSet7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iOOP_DatabaseDataSet8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iOOP_DatabaseDataSet9)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -120,6 +129,7 @@
             this.btnDeleteItem.TabIndex = 3;
             this.btnDeleteItem.Text = "Delete Item";
             this.btnDeleteItem.UseVisualStyleBackColor = false;
+            this.btnDeleteItem.Click += new System.EventHandler(this.btnDeleteItem_Click);
             // 
             // btnUpdateItem
             // 
@@ -160,12 +170,13 @@
             // 
             // pnlAddItem
             // 
+            this.pnlAddItem.BackColor = System.Drawing.Color.DarkOrange;
             this.pnlAddItem.Controls.Add(this.btnSaveAdd);
             this.pnlAddItem.Controls.Add(this.txtPrice1);
             this.pnlAddItem.Controls.Add(this.label4);
             this.pnlAddItem.Controls.Add(this.txtDescription1);
             this.pnlAddItem.Controls.Add(this.label3);
-            this.pnlAddItem.Controls.Add(this.textBox1);
+            this.pnlAddItem.Controls.Add(this.txtAddItem);
             this.pnlAddItem.Controls.Add(this.label2);
             this.pnlAddItem.Location = new System.Drawing.Point(38, 141);
             this.pnlAddItem.Name = "pnlAddItem";
@@ -193,9 +204,11 @@
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft YaHei UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label4.Location = new System.Drawing.Point(42, 175);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(38, 16);
+            this.label4.Size = new System.Drawing.Size(39, 19);
             this.label4.TabIndex = 4;
             this.label4.Text = "Price";
             // 
@@ -209,36 +222,41 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft YaHei UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label3.Location = new System.Drawing.Point(15, 111);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(75, 16);
+            this.label3.Size = new System.Drawing.Size(79, 19);
             this.label3.TabIndex = 2;
             this.label3.Text = "Description";
             // 
-            // textBox1
+            // txtAddItem
             // 
-            this.textBox1.Location = new System.Drawing.Point(110, 55);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(100, 22);
-            this.textBox1.TabIndex = 1;
+            this.txtAddItem.Location = new System.Drawing.Point(110, 55);
+            this.txtAddItem.Name = "txtAddItem";
+            this.txtAddItem.Size = new System.Drawing.Size(100, 22);
+            this.txtAddItem.TabIndex = 1;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft YaHei UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label2.Location = new System.Drawing.Point(42, 55);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(48, 16);
+            this.label2.Size = new System.Drawing.Size(55, 19);
             this.label2.TabIndex = 0;
             this.label2.Text = "Item ID";
             // 
             // pnlEditItem
             // 
-            this.pnlEditItem.Controls.Add(this.textBox2);
-            this.pnlEditItem.Controls.Add(this.textBox4);
+            this.pnlEditItem.BackColor = System.Drawing.Color.DarkOrange;
+            this.pnlEditItem.Controls.Add(this.txtSaveEdit);
+            this.pnlEditItem.Controls.Add(this.txtEditPrice);
+            this.pnlEditItem.Controls.Add(this.txtEditID);
             this.pnlEditItem.Controls.Add(this.label5);
             this.pnlEditItem.Controls.Add(this.label7);
-            this.pnlEditItem.Controls.Add(this.textBox3);
+            this.pnlEditItem.Controls.Add(this.txtEditDescription);
             this.pnlEditItem.Controls.Add(this.label6);
             this.pnlEditItem.Location = new System.Drawing.Point(374, 141);
             this.pnlEditItem.Name = "pnlEditItem";
@@ -246,23 +264,34 @@
             this.pnlEditItem.TabIndex = 7;
             this.pnlEditItem.Visible = false;
             // 
-            // textBox2
+            // txtSaveEdit
             // 
-            this.textBox2.Location = new System.Drawing.Point(110, 175);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 22);
-            this.textBox2.TabIndex = 12;
+            this.txtSaveEdit.Location = new System.Drawing.Point(110, 271);
+            this.txtSaveEdit.Name = "txtSaveEdit";
+            this.txtSaveEdit.Size = new System.Drawing.Size(75, 23);
+            this.txtSaveEdit.TabIndex = 7;
+            this.txtSaveEdit.Text = "Save";
+            this.txtSaveEdit.UseVisualStyleBackColor = true;
+            this.txtSaveEdit.Click += new System.EventHandler(this.txtSaveEdit_Click);
             // 
-            // textBox4
+            // txtEditPrice
             // 
-            this.textBox4.Location = new System.Drawing.Point(110, 55);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 22);
-            this.textBox4.TabIndex = 8;
+            this.txtEditPrice.Location = new System.Drawing.Point(110, 175);
+            this.txtEditPrice.Name = "txtEditPrice";
+            this.txtEditPrice.Size = new System.Drawing.Size(100, 22);
+            this.txtEditPrice.TabIndex = 12;
+            // 
+            // txtEditID
+            // 
+            this.txtEditID.Location = new System.Drawing.Point(110, 55);
+            this.txtEditID.Name = "txtEditID";
+            this.txtEditID.Size = new System.Drawing.Size(100, 22);
+            this.txtEditID.TabIndex = 8;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label5.Location = new System.Drawing.Point(42, 175);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(38, 16);
@@ -272,22 +301,24 @@
             // label7
             // 
             this.label7.AutoSize = true;
+            this.label7.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label7.Location = new System.Drawing.Point(42, 55);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(48, 16);
             this.label7.TabIndex = 7;
             this.label7.Text = "Item ID";
             // 
-            // textBox3
+            // txtEditDescription
             // 
-            this.textBox3.Location = new System.Drawing.Point(110, 111);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(142, 22);
-            this.textBox3.TabIndex = 10;
+            this.txtEditDescription.Location = new System.Drawing.Point(110, 111);
+            this.txtEditDescription.Name = "txtEditDescription";
+            this.txtEditDescription.Size = new System.Drawing.Size(142, 22);
+            this.txtEditDescription.TabIndex = 10;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label6.Location = new System.Drawing.Point(15, 111);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(75, 16);
@@ -296,11 +327,42 @@
             // 
             // pnlDeleteItem
             // 
+            this.pnlDeleteItem.BackColor = System.Drawing.Color.DarkOrange;
+            this.pnlDeleteItem.Controls.Add(this.btnDeleteItem1);
+            this.pnlDeleteItem.Controls.Add(this.txtDeleteItem);
+            this.pnlDeleteItem.Controls.Add(this.label8);
             this.pnlDeleteItem.Location = new System.Drawing.Point(721, 141);
             this.pnlDeleteItem.Name = "pnlDeleteItem";
             this.pnlDeleteItem.Size = new System.Drawing.Size(283, 409);
             this.pnlDeleteItem.TabIndex = 8;
             this.pnlDeleteItem.Visible = false;
+            // 
+            // btnDeleteItem1
+            // 
+            this.btnDeleteItem1.Location = new System.Drawing.Point(97, 271);
+            this.btnDeleteItem1.Name = "btnDeleteItem1";
+            this.btnDeleteItem1.Size = new System.Drawing.Size(75, 23);
+            this.btnDeleteItem1.TabIndex = 13;
+            this.btnDeleteItem1.Text = "Delete";
+            this.btnDeleteItem1.UseVisualStyleBackColor = true;
+            this.btnDeleteItem1.Click += new System.EventHandler(this.btnDeleteItem1_Click);
+            // 
+            // txtDeleteItem
+            // 
+            this.txtDeleteItem.Location = new System.Drawing.Point(117, 64);
+            this.txtDeleteItem.Name = "txtDeleteItem";
+            this.txtDeleteItem.Size = new System.Drawing.Size(100, 22);
+            this.txtDeleteItem.TabIndex = 14;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.ForeColor = System.Drawing.Color.White;
+            this.label8.Location = new System.Drawing.Point(49, 64);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(48, 16);
+            this.label8.TabIndex = 13;
+            this.label8.Text = "Item ID";
             // 
             // iOOP_DatabaseDataSet4
             // 
@@ -344,28 +406,14 @@
             this.foodIDDataGridViewTextBoxColumn,
             this.descriptionDataGridViewTextBoxColumn,
             this.priceDataGridViewTextBoxColumn});
-            this.dgvMenu.DataSource = this.menuBindingSource4;
-            this.dgvMenu.Location = new System.Drawing.Point(12, 12);
+            this.dgvMenu.DataSource = this.menuBindingSource3;
+            this.dgvMenu.Location = new System.Drawing.Point(12, 233);
             this.dgvMenu.Name = "dgvMenu";
             this.dgvMenu.ReadOnly = true;
             this.dgvMenu.RowHeadersWidth = 51;
             this.dgvMenu.RowTemplate.Height = 24;
-            this.dgvMenu.Size = new System.Drawing.Size(442, 165);
+            this.dgvMenu.Size = new System.Drawing.Size(547, 236);
             this.dgvMenu.TabIndex = 9;
-            // 
-            // iOOP_DatabaseDataSet7
-            // 
-            this.iOOP_DatabaseDataSet7.DataSetName = "IOOP_DatabaseDataSet7";
-            this.iOOP_DatabaseDataSet7.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // menuBindingSource4
-            // 
-            this.menuBindingSource4.DataMember = "Menu";
-            this.menuBindingSource4.DataSource = this.iOOP_DatabaseDataSet7;
-            // 
-            // menuTableAdapter4
-            // 
-            this.menuTableAdapter4.ClearBeforeFill = true;
             // 
             // foodIDDataGridViewTextBoxColumn
             // 
@@ -394,6 +442,30 @@
             this.priceDataGridViewTextBoxColumn.ReadOnly = true;
             this.priceDataGridViewTextBoxColumn.Width = 125;
             // 
+            // menuBindingSource4
+            // 
+            this.menuBindingSource4.DataMember = "Menu";
+            this.menuBindingSource4.DataSource = this.iOOP_DatabaseDataSet7;
+            // 
+            // iOOP_DatabaseDataSet7
+            // 
+            this.iOOP_DatabaseDataSet7.DataSetName = "IOOP_DatabaseDataSet7";
+            this.iOOP_DatabaseDataSet7.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // menuTableAdapter4
+            // 
+            this.menuTableAdapter4.ClearBeforeFill = true;
+            // 
+            // iOOP_DatabaseDataSet8
+            // 
+            this.iOOP_DatabaseDataSet8.DataSetName = "IOOP_DatabaseDataSet8";
+            this.iOOP_DatabaseDataSet8.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // iOOP_DatabaseDataSet9
+            // 
+            this.iOOP_DatabaseDataSet9.DataSetName = "IOOP_DatabaseDataSet9";
+            this.iOOP_DatabaseDataSet9.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -401,7 +473,6 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1039, 668);
-            this.Controls.Add(this.dgvMenu);
             this.Controls.Add(this.pnlAddItem);
             this.Controls.Add(this.pnlEditItem);
             this.Controls.Add(this.pnlDeleteItem);
@@ -409,6 +480,7 @@
             this.Controls.Add(this.btnDeleteItem);
             this.Controls.Add(this.btnAddItems);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.dgvMenu);
             this.Name = "Form2";
             this.Text = "Manager-Edit Menu";
             this.Load += new System.EventHandler(this.Form2_Load);
@@ -420,13 +492,17 @@
             this.pnlAddItem.PerformLayout();
             this.pnlEditItem.ResumeLayout(false);
             this.pnlEditItem.PerformLayout();
+            this.pnlDeleteItem.ResumeLayout(false);
+            this.pnlDeleteItem.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iOOP_DatabaseDataSet4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.menuBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iOOP_DatabaseDataSet6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.menuBindingSource3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMenu)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iOOP_DatabaseDataSet7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.menuBindingSource4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iOOP_DatabaseDataSet7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iOOP_DatabaseDataSet8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iOOP_DatabaseDataSet9)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -447,15 +523,15 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtDescription1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtAddItem;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel pnlEditItem;
         private System.Windows.Forms.Panel pnlDeleteItem;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtEditPrice;
+        private System.Windows.Forms.TextBox txtEditID;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtEditDescription;
         private System.Windows.Forms.Label label6;
         private IOOP_DatabaseDataSet4 iOOP_DatabaseDataSet4;
         private System.Windows.Forms.BindingSource menuBindingSource1;
@@ -473,5 +549,11 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn foodIDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn descriptionDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn priceDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Button txtSaveEdit;
+        private System.Windows.Forms.Button btnDeleteItem1;
+        private System.Windows.Forms.TextBox txtDeleteItem;
+        private System.Windows.Forms.Label label8;
+        private IOOP_DatabaseDataSet8 iOOP_DatabaseDataSet8;
+        private IOOP_DatabaseDataSet9 iOOP_DatabaseDataSet9;
     }
 }

@@ -18,23 +18,19 @@ namespace Assignment.Manager
                 DataTable dt = new DataTable();
                 adapter.Fill(dt);
 
-                // Debugging: Print each row
-                foreach (DataRow row in dt.Rows)
-                {
-                    Console.WriteLine($"FoodID: {row["FoodID"]}, Description: {row["Description"]}, Price: {row["Price"]}");
-                }
-
                 return dt;
             }
         }
 
 
-        public bool AddMenuItem(string description, decimal price)
+
+        public bool AddMenuItem(string foodID, string description, decimal price)
         {
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
-                string query = "INSERT INTO Menu (Description, Price) VALUES (@Description, @Price)";
+                string query = "INSERT INTO Menu (FoodID, Description, Price) VALUES (@FoodID, @Description, @Price)";
                 SqlCommand cmd = new SqlCommand(query, conn);
+                cmd.Parameters.AddWithValue("@FoodID", foodID);
                 cmd.Parameters.AddWithValue("@Description", description);
                 cmd.Parameters.AddWithValue("@Price", price);
 
@@ -47,34 +43,40 @@ namespace Assignment.Manager
         }
 
 
-        public void UpdateMenuItem(int foodID, string description, decimal price)
+
+        public bool UpdateMenuItem(string foodID, string description, decimal price) // Change foodID to string
         {
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
                 string query = "UPDATE Menu SET Description = @Description, Price = @Price WHERE FoodID = @FoodID";
                 SqlCommand cmd = new SqlCommand(query, conn);
-                cmd.Parameters.AddWithValue("@FoodID", foodID);
+                cmd.Parameters.AddWithValue("@FoodID", foodID); // Keep FoodID as string
                 cmd.Parameters.AddWithValue("@Description", description);
                 cmd.Parameters.AddWithValue("@Price", price);
 
                 conn.Open();
-                cmd.ExecuteNonQuery();
+                int rowsAffected = cmd.ExecuteNonQuery();
                 conn.Close();
+
+                return rowsAffected > 0;
             }
         }
 
-        public void DeleteMenuItem(int foodID)
+        public bool DeleteMenuItem(string foodID) // Change foodID to string
         {
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
                 string query = "DELETE FROM Menu WHERE FoodID = @FoodID";
                 SqlCommand cmd = new SqlCommand(query, conn);
-                cmd.Parameters.AddWithValue("@FoodID", foodID);
+                cmd.Parameters.AddWithValue("@FoodID", foodID); // Keep FoodID as string
 
                 conn.Open();
-                cmd.ExecuteNonQuery();
+                int rowsAffected = cmd.ExecuteNonQuery();
                 conn.Close();
+
+                return rowsAffected > 0;
             }
         }
+
     }
 }
