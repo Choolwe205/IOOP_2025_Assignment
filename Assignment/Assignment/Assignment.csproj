@@ -82,6 +82,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>IOOP_DatabaseDataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="IOOP_DatabaseDataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IOOP_DatabaseDataSet10.xsd</DependentUpon>
+    </Compile>
     <Compile Include="IOOP_DatabaseDataSet11.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -204,6 +209,17 @@
     </None>
     <None Include="IOOP_DatabaseDataSet1.xss">
       <DependentUpon>IOOP_DatabaseDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="IOOP_DatabaseDataSet10.xsc">
+      <DependentUpon>IOOP_DatabaseDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="IOOP_DatabaseDataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>IOOP_DatabaseDataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="IOOP_DatabaseDataSet10.xss">
+      <DependentUpon>IOOP_DatabaseDataSet10.xsd</DependentUpon>
     </None>
     <None Include="IOOP_DatabaseDataSet11.xsc">
       <DependentUpon>IOOP_DatabaseDataSet11.xsd</DependentUpon>
