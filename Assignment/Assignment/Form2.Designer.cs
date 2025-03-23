@@ -32,13 +32,13 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.name_lbl = new System.Windows.Forms.Label();
-            this.password_lbl = new System.Windows.Forms.Label();
-            this.phone_number_lbl = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.phone_number_lbl = new System.Windows.Forms.Label();
+            this.password_lbl = new System.Windows.Forms.Label();
+            this.name_lbl = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -90,39 +90,33 @@
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // label4
+            // button3
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(91, 247);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(188, 29);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Phone Number: ";
+            this.button3.Location = new System.Drawing.Point(618, 241);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(84, 35);
+            this.button3.TabIndex = 9;
+            this.button3.Text = "Edit";
+            this.button3.UseVisualStyleBackColor = true;
             // 
-            // name_lbl
+            // button2
             // 
-            this.name_lbl.AutoSize = true;
-            this.name_lbl.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.name_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.name_lbl.Location = new System.Drawing.Point(307, 97);
-            this.name_lbl.Name = "name_lbl";
-            this.name_lbl.Size = new System.Drawing.Size(25, 29);
-            this.name_lbl.TabIndex = 4;
-            this.name_lbl.Text = "  ";
-            this.name_lbl.Click += new System.EventHandler(this.label5_Click);
+            this.button2.Location = new System.Drawing.Point(618, 158);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(84, 35);
+            this.button2.TabIndex = 8;
+            this.button2.Text = "Edit";
+            this.button2.UseVisualStyleBackColor = true;
             // 
-            // password_lbl
+            // button1
             // 
-            this.password_lbl.AutoSize = true;
-            this.password_lbl.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.password_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.password_lbl.Location = new System.Drawing.Point(318, 164);
-            this.password_lbl.Name = "password_lbl";
-            this.password_lbl.Size = new System.Drawing.Size(25, 29);
-            this.password_lbl.TabIndex = 5;
-            this.password_lbl.Text = "  ";
-            this.password_lbl.Click += new System.EventHandler(this.label6_Click);
+            this.button1.Location = new System.Drawing.Point(618, 97);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(84, 35);
+            this.button1.TabIndex = 7;
+            this.button1.Text = "Edit";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // phone_number_lbl
             // 
@@ -136,32 +130,39 @@
             this.phone_number_lbl.Text = "  ";
             this.phone_number_lbl.Click += new System.EventHandler(this.label7_Click);
             // 
-            // button1
+            // password_lbl
             // 
-            this.button1.Location = new System.Drawing.Point(618, 97);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(84, 35);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "Edit";
-            this.button1.UseVisualStyleBackColor = true;
+            this.password_lbl.AutoSize = true;
+            this.password_lbl.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.password_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.password_lbl.Location = new System.Drawing.Point(318, 164);
+            this.password_lbl.Name = "password_lbl";
+            this.password_lbl.Size = new System.Drawing.Size(25, 29);
+            this.password_lbl.TabIndex = 5;
+            this.password_lbl.Text = "  ";
+            this.password_lbl.Click += new System.EventHandler(this.label6_Click);
             // 
-            // button2
+            // name_lbl
             // 
-            this.button2.Location = new System.Drawing.Point(618, 158);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(84, 35);
-            this.button2.TabIndex = 8;
-            this.button2.Text = "Edit";
-            this.button2.UseVisualStyleBackColor = true;
+            this.name_lbl.AutoSize = true;
+            this.name_lbl.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.name_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.name_lbl.Location = new System.Drawing.Point(307, 97);
+            this.name_lbl.Name = "name_lbl";
+            this.name_lbl.Size = new System.Drawing.Size(25, 29);
+            this.name_lbl.TabIndex = 4;
+            this.name_lbl.Text = "  ";
+            this.name_lbl.Click += new System.EventHandler(this.label5_Click);
             // 
-            // button3
+            // label4
             // 
-            this.button3.Location = new System.Drawing.Point(618, 241);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(84, 35);
-            this.button3.TabIndex = 9;
-            this.button3.Text = "Edit";
-            this.button3.UseVisualStyleBackColor = true;
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(91, 247);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(188, 29);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "Phone Number: ";
             // 
             // Form2
             // 
