@@ -39,7 +39,7 @@ namespace Assignment
         {
             Sales_admin sales_form = new Sales_admin();
             sales_form.TopLevel = false;
-            panel2.Controls.Add(sales_form);
+            View_pannel.Controls.Add(sales_form);
             sales_form.BringToFront();
             sales_form.Show();
 
@@ -95,7 +95,7 @@ namespace Assignment
         {
             if (expand_condition == false)
             {
-                SideBar.Width -= 2;
+                SideBar.Width -= 4;
                 if (SideBar.Width == 48)
                 {
                     SideBar_Timer.Stop();
@@ -103,8 +103,8 @@ namespace Assignment
             }
             else if (expand_condition == true)
             {
-                SideBar.Width += 2;
-                if (SideBar.Width == 274)
+                SideBar.Width += 4;
+                if (SideBar.Width == 240)
                 {
                     SideBar_Timer.Stop();
                 }
@@ -116,7 +116,7 @@ namespace Assignment
             sideBar_width = SideBar.Width;
 
 
-            if (sideBar_width == 274)
+            if (sideBar_width == 240)
             {
                 expand_condition = false;
             }
@@ -127,6 +127,21 @@ namespace Assignment
 
 
             SideBar_Timer.Start();
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void Admininstrator_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint_1(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
