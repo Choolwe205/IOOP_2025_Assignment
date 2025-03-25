@@ -103,6 +103,26 @@
     <Compile Include="HomePage.Designer.cs">
       <DependentUpon>HomePage.cs</DependentUpon>
     </Compile>
+    <Compile Include="IOOP_DatabaseDataSet12.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IOOP_DatabaseDataSet12.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="IOOP_DatabaseDataSet13.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IOOP_DatabaseDataSet13.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="IOOP_DatabaseDataSet21.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IOOP_DatabaseDataSet21.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="IOOP_DatabaseDataSet31.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IOOP_DatabaseDataSet31.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Managers_admin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -195,6 +215,50 @@
     <EmbeddedResource Include="ViewReservation.resx">
       <DependentUpon>ViewReservation.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="IOOP_DatabaseDataSet12.xsc">
+      <DependentUpon>IOOP_DatabaseDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="IOOP_DatabaseDataSet12.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>IOOP_DatabaseDataSet12.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="IOOP_DatabaseDataSet12.xss">
+      <DependentUpon>IOOP_DatabaseDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="IOOP_DatabaseDataSet13.xsc">
+      <DependentUpon>IOOP_DatabaseDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="IOOP_DatabaseDataSet13.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>IOOP_DatabaseDataSet13.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="IOOP_DatabaseDataSet13.xss">
+      <DependentUpon>IOOP_DatabaseDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="IOOP_DatabaseDataSet21.xsc">
+      <DependentUpon>IOOP_DatabaseDataSet21.xsd</DependentUpon>
+    </None>
+    <None Include="IOOP_DatabaseDataSet21.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>IOOP_DatabaseDataSet21.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="IOOP_DatabaseDataSet21.xss">
+      <DependentUpon>IOOP_DatabaseDataSet21.xsd</DependentUpon>
+    </None>
+    <None Include="IOOP_DatabaseDataSet31.xsc">
+      <DependentUpon>IOOP_DatabaseDataSet31.xsd</DependentUpon>
+    </None>
+    <None Include="IOOP_DatabaseDataSet31.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>IOOP_DatabaseDataSet31.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="IOOP_DatabaseDataSet31.xss">
+      <DependentUpon>IOOP_DatabaseDataSet31.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

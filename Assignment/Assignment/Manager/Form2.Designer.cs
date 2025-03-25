@@ -35,10 +35,7 @@
             this.btnDeleteItem = new System.Windows.Forms.Button();
             this.btnUpdateItem = new System.Windows.Forms.Button();
             this.menuBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
-            this.iOOP_DatabaseDataSet5 = new Assignment.IOOP_DatabaseDataSet5();
             this.menuBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.iOOP_DatabaseDataSet3 = new Assignment.IOOP_DatabaseDataSet3();
-            this.menuTableAdapter = new Assignment.IOOP_DatabaseDataSet3TableAdapters.MenuTableAdapter();
             this.pnlAddItem = new System.Windows.Forms.Panel();
             this.btnSaveAdd = new System.Windows.Forms.Button();
             this.txtPrice1 = new System.Windows.Forms.TextBox();
@@ -59,38 +56,27 @@
             this.btnDeleteItem1 = new System.Windows.Forms.Button();
             this.txtDeleteItem = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.iOOP_DatabaseDataSet4 = new Assignment.IOOP_DatabaseDataSet4();
             this.menuBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.menuTableAdapter1 = new Assignment.IOOP_DatabaseDataSet4TableAdapters.MenuTableAdapter();
-            this.menuTableAdapter2 = new Assignment.IOOP_DatabaseDataSet5TableAdapters.MenuTableAdapter();
-            this.iOOP_DatabaseDataSet6 = new Assignment.IOOP_DatabaseDataSet6();
             this.menuBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
-            this.menuTableAdapter3 = new Assignment.IOOP_DatabaseDataSet6TableAdapters.MenuTableAdapter();
             this.dgvMenu = new System.Windows.Forms.DataGridView();
-            this.foodIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.descriptionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.priceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.menuBindingSource4 = new System.Windows.Forms.BindingSource(this.components);
-            this.iOOP_DatabaseDataSet7 = new Assignment.IOOP_DatabaseDataSet7();
-            this.menuTableAdapter4 = new Assignment.IOOP_DatabaseDataSet7TableAdapters.MenuTableAdapter();
-            this.iOOP_DatabaseDataSet8 = new Assignment.IOOP_DatabaseDataSet8();
-            this.iOOP_DatabaseDataSet9 = new Assignment.IOOP_DatabaseDataSet9();
+            this.iOOP_DatabaseDataSet1 = new Assignment.IOOP_DatabaseDataSet1();
+            this.menuBindingSource5 = new System.Windows.Forms.BindingSource(this.components);
+            this.menuTableAdapter = new Assignment.IOOP_DatabaseDataSet1TableAdapters.MenuTableAdapter();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.menuBindingSource2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iOOP_DatabaseDataSet5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.menuBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iOOP_DatabaseDataSet3)).BeginInit();
             this.pnlAddItem.SuspendLayout();
             this.pnlEditItem.SuspendLayout();
             this.pnlDeleteItem.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.iOOP_DatabaseDataSet4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.menuBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iOOP_DatabaseDataSet6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.menuBindingSource3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMenu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.menuBindingSource4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iOOP_DatabaseDataSet7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iOOP_DatabaseDataSet8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iOOP_DatabaseDataSet9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iOOP_DatabaseDataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.menuBindingSource5)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -147,26 +133,10 @@
             // menuBindingSource2
             // 
             this.menuBindingSource2.DataMember = "Menu";
-            this.menuBindingSource2.DataSource = this.iOOP_DatabaseDataSet5;
-            // 
-            // iOOP_DatabaseDataSet5
-            // 
-            this.iOOP_DatabaseDataSet5.DataSetName = "IOOP_DatabaseDataSet5";
-            this.iOOP_DatabaseDataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // menuBindingSource
             // 
             this.menuBindingSource.DataMember = "Menu";
-            this.menuBindingSource.DataSource = this.iOOP_DatabaseDataSet3;
-            // 
-            // iOOP_DatabaseDataSet3
-            // 
-            this.iOOP_DatabaseDataSet3.DataSetName = "IOOP_DatabaseDataSet3";
-            this.iOOP_DatabaseDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // menuTableAdapter
-            // 
-            this.menuTableAdapter.ClearBeforeFill = true;
             // 
             // pnlAddItem
             // 
@@ -364,37 +334,13 @@
             this.label8.TabIndex = 13;
             this.label8.Text = "Item ID";
             // 
-            // iOOP_DatabaseDataSet4
-            // 
-            this.iOOP_DatabaseDataSet4.DataSetName = "IOOP_DatabaseDataSet4";
-            this.iOOP_DatabaseDataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // menuBindingSource1
             // 
             this.menuBindingSource1.DataMember = "Menu";
-            this.menuBindingSource1.DataSource = this.iOOP_DatabaseDataSet4;
-            // 
-            // menuTableAdapter1
-            // 
-            this.menuTableAdapter1.ClearBeforeFill = true;
-            // 
-            // menuTableAdapter2
-            // 
-            this.menuTableAdapter2.ClearBeforeFill = true;
-            // 
-            // iOOP_DatabaseDataSet6
-            // 
-            this.iOOP_DatabaseDataSet6.DataSetName = "IOOP_DatabaseDataSet6";
-            this.iOOP_DatabaseDataSet6.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // menuBindingSource3
             // 
             this.menuBindingSource3.DataMember = "Menu";
-            this.menuBindingSource3.DataSource = this.iOOP_DatabaseDataSet6;
-            // 
-            // menuTableAdapter3
-            // 
-            this.menuTableAdapter3.ClearBeforeFill = true;
             // 
             // dgvMenu
             // 
@@ -403,10 +349,10 @@
             this.dgvMenu.AutoGenerateColumns = false;
             this.dgvMenu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvMenu.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.foodIDDataGridViewTextBoxColumn,
-            this.descriptionDataGridViewTextBoxColumn,
-            this.priceDataGridViewTextBoxColumn});
-            this.dgvMenu.DataSource = this.menuBindingSource3;
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3});
+            this.dgvMenu.DataSource = this.menuBindingSource5;
             this.dgvMenu.Location = new System.Drawing.Point(12, 233);
             this.dgvMenu.Name = "dgvMenu";
             this.dgvMenu.ReadOnly = true;
@@ -415,56 +361,50 @@
             this.dgvMenu.Size = new System.Drawing.Size(547, 236);
             this.dgvMenu.TabIndex = 9;
             // 
-            // foodIDDataGridViewTextBoxColumn
-            // 
-            this.foodIDDataGridViewTextBoxColumn.DataPropertyName = "FoodID";
-            this.foodIDDataGridViewTextBoxColumn.HeaderText = "FoodID";
-            this.foodIDDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.foodIDDataGridViewTextBoxColumn.Name = "foodIDDataGridViewTextBoxColumn";
-            this.foodIDDataGridViewTextBoxColumn.ReadOnly = true;
-            this.foodIDDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // descriptionDataGridViewTextBoxColumn
-            // 
-            this.descriptionDataGridViewTextBoxColumn.DataPropertyName = "Description";
-            this.descriptionDataGridViewTextBoxColumn.HeaderText = "Description";
-            this.descriptionDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.descriptionDataGridViewTextBoxColumn.Name = "descriptionDataGridViewTextBoxColumn";
-            this.descriptionDataGridViewTextBoxColumn.ReadOnly = true;
-            this.descriptionDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // priceDataGridViewTextBoxColumn
-            // 
-            this.priceDataGridViewTextBoxColumn.DataPropertyName = "Price";
-            this.priceDataGridViewTextBoxColumn.HeaderText = "Price";
-            this.priceDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.priceDataGridViewTextBoxColumn.Name = "priceDataGridViewTextBoxColumn";
-            this.priceDataGridViewTextBoxColumn.ReadOnly = true;
-            this.priceDataGridViewTextBoxColumn.Width = 125;
-            // 
             // menuBindingSource4
             // 
             this.menuBindingSource4.DataMember = "Menu";
-            this.menuBindingSource4.DataSource = this.iOOP_DatabaseDataSet7;
             // 
-            // iOOP_DatabaseDataSet7
+            // iOOP_DatabaseDataSet1
             // 
-            this.iOOP_DatabaseDataSet7.DataSetName = "IOOP_DatabaseDataSet7";
-            this.iOOP_DatabaseDataSet7.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.iOOP_DatabaseDataSet1.DataSetName = "IOOP_DatabaseDataSet1";
+            this.iOOP_DatabaseDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // menuTableAdapter4
+            // menuBindingSource5
             // 
-            this.menuTableAdapter4.ClearBeforeFill = true;
+            this.menuBindingSource5.DataMember = "Menu";
+            this.menuBindingSource5.DataSource = this.iOOP_DatabaseDataSet1;
             // 
-            // iOOP_DatabaseDataSet8
+            // menuTableAdapter
             // 
-            this.iOOP_DatabaseDataSet8.DataSetName = "IOOP_DatabaseDataSet8";
-            this.iOOP_DatabaseDataSet8.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.menuTableAdapter.ClearBeforeFill = true;
             // 
-            // iOOP_DatabaseDataSet9
+            // dataGridViewTextBoxColumn1
             // 
-            this.iOOP_DatabaseDataSet9.DataSetName = "IOOP_DatabaseDataSet9";
-            this.iOOP_DatabaseDataSet9.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "FoodID";
+            this.dataGridViewTextBoxColumn1.HeaderText = "FoodID";
+            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            this.dataGridViewTextBoxColumn1.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "Description";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Description";
+            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
+            this.dataGridViewTextBoxColumn2.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "Price";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Price";
+            this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.ReadOnly = true;
+            this.dataGridViewTextBoxColumn3.Width = 125;
             // 
             // Form2
             // 
@@ -485,24 +425,19 @@
             this.Text = "Manager-Edit Menu";
             this.Load += new System.EventHandler(this.Form2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.menuBindingSource2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iOOP_DatabaseDataSet5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.menuBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iOOP_DatabaseDataSet3)).EndInit();
             this.pnlAddItem.ResumeLayout(false);
             this.pnlAddItem.PerformLayout();
             this.pnlEditItem.ResumeLayout(false);
             this.pnlEditItem.PerformLayout();
             this.pnlDeleteItem.ResumeLayout(false);
             this.pnlDeleteItem.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.iOOP_DatabaseDataSet4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.menuBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iOOP_DatabaseDataSet6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.menuBindingSource3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMenu)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.menuBindingSource4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iOOP_DatabaseDataSet7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iOOP_DatabaseDataSet8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iOOP_DatabaseDataSet9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iOOP_DatabaseDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.menuBindingSource5)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -514,9 +449,7 @@
         private System.Windows.Forms.Button btnAddItems;
         private System.Windows.Forms.Button btnDeleteItem;
         private System.Windows.Forms.Button btnUpdateItem;
-        private IOOP_DatabaseDataSet3 iOOP_DatabaseDataSet3;
         private System.Windows.Forms.BindingSource menuBindingSource;
-        private IOOP_DatabaseDataSet3TableAdapters.MenuTableAdapter menuTableAdapter;
         private System.Windows.Forms.Panel pnlAddItem;
         private System.Windows.Forms.Button btnSaveAdd;
         private System.Windows.Forms.TextBox txtPrice1;
@@ -533,19 +466,11 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txtEditDescription;
         private System.Windows.Forms.Label label6;
-        private IOOP_DatabaseDataSet4 iOOP_DatabaseDataSet4;
         private System.Windows.Forms.BindingSource menuBindingSource1;
-        private IOOP_DatabaseDataSet4TableAdapters.MenuTableAdapter menuTableAdapter1;
-        private IOOP_DatabaseDataSet5 iOOP_DatabaseDataSet5;
         private System.Windows.Forms.BindingSource menuBindingSource2;
-        private IOOP_DatabaseDataSet5TableAdapters.MenuTableAdapter menuTableAdapter2;
-        private IOOP_DatabaseDataSet6 iOOP_DatabaseDataSet6;
         private System.Windows.Forms.BindingSource menuBindingSource3;
-        private IOOP_DatabaseDataSet6TableAdapters.MenuTableAdapter menuTableAdapter3;
         private System.Windows.Forms.DataGridView dgvMenu;
-        private IOOP_DatabaseDataSet7 iOOP_DatabaseDataSet7;
         private System.Windows.Forms.BindingSource menuBindingSource4;
-        private IOOP_DatabaseDataSet7TableAdapters.MenuTableAdapter menuTableAdapter4;
         private System.Windows.Forms.DataGridViewTextBoxColumn foodIDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn descriptionDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn priceDataGridViewTextBoxColumn;
@@ -553,7 +478,11 @@
         private System.Windows.Forms.Button btnDeleteItem1;
         private System.Windows.Forms.TextBox txtDeleteItem;
         private System.Windows.Forms.Label label8;
-        private IOOP_DatabaseDataSet8 iOOP_DatabaseDataSet8;
-        private IOOP_DatabaseDataSet9 iOOP_DatabaseDataSet9;
+        private IOOP_DatabaseDataSet1 iOOP_DatabaseDataSet1;
+        private System.Windows.Forms.BindingSource menuBindingSource5;
+        private IOOP_DatabaseDataSet1TableAdapters.MenuTableAdapter menuTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
     }
 }

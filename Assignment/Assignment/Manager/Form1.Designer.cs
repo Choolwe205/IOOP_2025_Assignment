@@ -36,20 +36,23 @@
             this.btnUpdateProfile = new System.Windows.Forms.Button();
             this.btnHallReport = new System.Windows.Forms.Button();
             this.pnlReservationReport = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.iOOP_DatabaseDataSet10 = new Assignment.IOOP_DatabaseDataSet10();
-            this.resrvationsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.resrvationsTableAdapter = new Assignment.IOOP_DatabaseDataSet10TableAdapters.ResrvationsTableAdapter();
-            this.reservationIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.hallIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.reservationTypeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.bookingDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnClose = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.resrvationsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.label2 = new System.Windows.Forms.Label();
+            this.iOOP_DatabaseDataSet = new Assignment.IOOP_DatabaseDataSet();
+            this.resrvationsBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.resrvationsTableAdapter = new Assignment.IOOP_DatabaseDataSetTableAdapters.ResrvationsTableAdapter();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.customerIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pnlReservationReport.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iOOP_DatabaseDataSet10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.resrvationsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iOOP_DatabaseDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.resrvationsBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -128,6 +131,37 @@
             this.pnlReservationReport.TabIndex = 6;
             this.pnlReservationReport.Visible = false;
             // 
+            // btnClose
+            // 
+            this.btnClose.Location = new System.Drawing.Point(199, 316);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(75, 23);
+            this.btnClose.TabIndex = 2;
+            this.btnClose.Text = "Close";
+            this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.customerIDDataGridViewTextBoxColumn,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn4});
+            this.dataGridView1.DataSource = this.resrvationsBindingSource1;
+            this.dataGridView1.Location = new System.Drawing.Point(3, 93);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(475, 193);
+            this.dataGridView1.TabIndex = 1;
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -139,85 +173,64 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Reservation Hall Report";
             // 
-            // dataGridView1
+            // iOOP_DatabaseDataSet
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.reservationIDDataGridViewTextBoxColumn,
-            this.hallIDDataGridViewTextBoxColumn,
-            this.reservationTypeDataGridViewTextBoxColumn,
-            this.bookingDateDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.resrvationsBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(3, 93);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(475, 193);
-            this.dataGridView1.TabIndex = 1;
+            this.iOOP_DatabaseDataSet.DataSetName = "IOOP_DatabaseDataSet";
+            this.iOOP_DatabaseDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // iOOP_DatabaseDataSet10
+            // resrvationsBindingSource1
             // 
-            this.iOOP_DatabaseDataSet10.DataSetName = "IOOP_DatabaseDataSet10";
-            this.iOOP_DatabaseDataSet10.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // resrvationsBindingSource
-            // 
-            this.resrvationsBindingSource.DataMember = "Resrvations";
-            this.resrvationsBindingSource.DataSource = this.iOOP_DatabaseDataSet10;
+            this.resrvationsBindingSource1.DataMember = "Resrvations";
+            this.resrvationsBindingSource1.DataSource = this.iOOP_DatabaseDataSet;
             // 
             // resrvationsTableAdapter
             // 
             this.resrvationsTableAdapter.ClearBeforeFill = true;
             // 
-            // reservationIDDataGridViewTextBoxColumn
+            // dataGridViewTextBoxColumn1
             // 
-            this.reservationIDDataGridViewTextBoxColumn.DataPropertyName = "Reservation ID";
-            this.reservationIDDataGridViewTextBoxColumn.HeaderText = "Reservation ID";
-            this.reservationIDDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.reservationIDDataGridViewTextBoxColumn.Name = "reservationIDDataGridViewTextBoxColumn";
-            this.reservationIDDataGridViewTextBoxColumn.ReadOnly = true;
-            this.reservationIDDataGridViewTextBoxColumn.Width = 125;
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "Reservation ID";
+            this.dataGridViewTextBoxColumn1.HeaderText = "Reservation ID";
+            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            this.dataGridViewTextBoxColumn1.Width = 125;
             // 
-            // hallIDDataGridViewTextBoxColumn
+            // customerIDDataGridViewTextBoxColumn
             // 
-            this.hallIDDataGridViewTextBoxColumn.DataPropertyName = "Hall ID";
-            this.hallIDDataGridViewTextBoxColumn.HeaderText = "Hall ID";
-            this.hallIDDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.hallIDDataGridViewTextBoxColumn.Name = "hallIDDataGridViewTextBoxColumn";
-            this.hallIDDataGridViewTextBoxColumn.ReadOnly = true;
-            this.hallIDDataGridViewTextBoxColumn.Width = 125;
+            this.customerIDDataGridViewTextBoxColumn.DataPropertyName = "Customer ID";
+            this.customerIDDataGridViewTextBoxColumn.HeaderText = "Customer ID";
+            this.customerIDDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.customerIDDataGridViewTextBoxColumn.Name = "customerIDDataGridViewTextBoxColumn";
+            this.customerIDDataGridViewTextBoxColumn.ReadOnly = true;
+            this.customerIDDataGridViewTextBoxColumn.Width = 125;
             // 
-            // reservationTypeDataGridViewTextBoxColumn
+            // dataGridViewTextBoxColumn2
             // 
-            this.reservationTypeDataGridViewTextBoxColumn.DataPropertyName = "Reservation Type";
-            this.reservationTypeDataGridViewTextBoxColumn.HeaderText = "Reservation Type";
-            this.reservationTypeDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.reservationTypeDataGridViewTextBoxColumn.Name = "reservationTypeDataGridViewTextBoxColumn";
-            this.reservationTypeDataGridViewTextBoxColumn.ReadOnly = true;
-            this.reservationTypeDataGridViewTextBoxColumn.Width = 125;
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "Hall ID";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Hall ID";
+            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
+            this.dataGridViewTextBoxColumn2.Width = 125;
             // 
-            // bookingDateDataGridViewTextBoxColumn
+            // dataGridViewTextBoxColumn3
             // 
-            this.bookingDateDataGridViewTextBoxColumn.DataPropertyName = "Booking Date";
-            this.bookingDateDataGridViewTextBoxColumn.HeaderText = "Booking Date";
-            this.bookingDateDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.bookingDateDataGridViewTextBoxColumn.Name = "bookingDateDataGridViewTextBoxColumn";
-            this.bookingDateDataGridViewTextBoxColumn.ReadOnly = true;
-            this.bookingDateDataGridViewTextBoxColumn.Width = 125;
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "Reservation Type";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Reservation Type";
+            this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.ReadOnly = true;
+            this.dataGridViewTextBoxColumn3.Width = 125;
             // 
-            // btnClose
+            // dataGridViewTextBoxColumn4
             // 
-            this.btnClose.Location = new System.Drawing.Point(199, 316);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(75, 23);
-            this.btnClose.TabIndex = 2;
-            this.btnClose.Text = "Close";
-            this.btnClose.UseVisualStyleBackColor = true;
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "Booking Date";
+            this.dataGridViewTextBoxColumn4.HeaderText = "Booking Date";
+            this.dataGridViewTextBoxColumn4.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.ReadOnly = true;
+            this.dataGridViewTextBoxColumn4.Width = 125;
             // 
             // Form1
             // 
@@ -238,8 +251,9 @@
             this.pnlReservationReport.ResumeLayout(false);
             this.pnlReservationReport.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iOOP_DatabaseDataSet10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.resrvationsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iOOP_DatabaseDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.resrvationsBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -255,13 +269,19 @@
         private System.Windows.Forms.Panel pnlReservationReport;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label2;
-        private IOOP_DatabaseDataSet10 iOOP_DatabaseDataSet10;
         private System.Windows.Forms.BindingSource resrvationsBindingSource;
-        private IOOP_DatabaseDataSet10TableAdapters.ResrvationsTableAdapter resrvationsTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn reservationIDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn hallIDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn reservationTypeDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn bookingDateDataGridViewTextBoxColumn;
         private System.Windows.Forms.Button btnClose;
+        private IOOP_DatabaseDataSet iOOP_DatabaseDataSet;
+        private System.Windows.Forms.BindingSource resrvationsBindingSource1;
+        private IOOP_DatabaseDataSetTableAdapters.ResrvationsTableAdapter resrvationsTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn customerIDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
     }
 }

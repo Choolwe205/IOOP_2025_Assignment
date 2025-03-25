@@ -34,15 +34,11 @@
             this.btnAddHalls = new System.Windows.Forms.Button();
             this.btnEditHall = new System.Windows.Forms.Button();
             this.btnDeleteHall = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.hallIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.capacityDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.availabilityDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.hallsBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.hallsBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
             this.iOOP_DatabaseDataSet2 = new Assignment.IOOP_DatabaseDataSet2();
+            this.hallsBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.hallsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.iOOP_DatabaseDataSet = new Assignment.IOOP_DatabaseDataSet();
-            this.hallsTableAdapter = new Assignment.IOOP_DatabaseDataSetTableAdapters.HallsTableAdapter();
             this.panelAdd = new System.Windows.Forms.Panel();
             this.btnSaveAdd = new System.Windows.Forms.Button();
             this.comboAvailability1 = new System.Windows.Forms.ComboBox();
@@ -65,11 +61,17 @@
             this.label3 = new System.Windows.Forms.Label();
             this.iOOP_DatabaseDataSet1 = new Assignment.IOOP_DatabaseDataSet1();
             this.hallsBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.hallsTableAdapter1 = new Assignment.IOOP_DatabaseDataSet1TableAdapters.HallsTableAdapter();
-            this.hallsTableAdapter2 = new Assignment.IOOP_DatabaseDataSet2TableAdapters.HallsTableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hallsBindingSource2)).BeginInit();
+            this.hallsTableAdapter = new Assignment.IOOP_DatabaseDataSet2TableAdapters.HallsTableAdapter();
+            this.iOOP_DatabaseDataSet3 = new Assignment.IOOP_DatabaseDataSet3();
+            this.hallsBindingSource4 = new System.Windows.Forms.BindingSource(this.components);
+            this.hallsTableAdapter1 = new Assignment.IOOP_DatabaseDataSet3TableAdapters.HallsTableAdapter();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.hallsBindingSource3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iOOP_DatabaseDataSet2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hallsBindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hallsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iOOP_DatabaseDataSet)).BeginInit();
             this.panelAdd.SuspendLayout();
@@ -77,6 +79,9 @@
             this.panelDelete.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iOOP_DatabaseDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hallsBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iOOP_DatabaseDataSet3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hallsBindingSource4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -130,76 +135,29 @@
             this.btnDeleteHall.UseVisualStyleBackColor = false;
             this.btnDeleteHall.Click += new System.EventHandler(this.btnDeleteHall_Click);
             // 
-            // dataGridView1
+            // hallsBindingSource3
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.hallIDDataGridViewTextBoxColumn,
-            this.capacityDataGridViewTextBoxColumn,
-            this.availabilityDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.hallsBindingSource2;
-            this.dataGridView1.Location = new System.Drawing.Point(22, 221);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(593, 257);
-            this.dataGridView1.TabIndex = 5;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // hallIDDataGridViewTextBoxColumn
-            // 
-            this.hallIDDataGridViewTextBoxColumn.DataPropertyName = "HallID";
-            this.hallIDDataGridViewTextBoxColumn.HeaderText = "HallID";
-            this.hallIDDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.hallIDDataGridViewTextBoxColumn.Name = "hallIDDataGridViewTextBoxColumn";
-            this.hallIDDataGridViewTextBoxColumn.ReadOnly = true;
-            this.hallIDDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // capacityDataGridViewTextBoxColumn
-            // 
-            this.capacityDataGridViewTextBoxColumn.DataPropertyName = "Capacity";
-            this.capacityDataGridViewTextBoxColumn.HeaderText = "Capacity";
-            this.capacityDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.capacityDataGridViewTextBoxColumn.Name = "capacityDataGridViewTextBoxColumn";
-            this.capacityDataGridViewTextBoxColumn.ReadOnly = true;
-            this.capacityDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // availabilityDataGridViewTextBoxColumn
-            // 
-            this.availabilityDataGridViewTextBoxColumn.DataPropertyName = "Availability";
-            this.availabilityDataGridViewTextBoxColumn.HeaderText = "Availability";
-            this.availabilityDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.availabilityDataGridViewTextBoxColumn.Name = "availabilityDataGridViewTextBoxColumn";
-            this.availabilityDataGridViewTextBoxColumn.ReadOnly = true;
-            this.availabilityDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // hallsBindingSource2
-            // 
-            this.hallsBindingSource2.DataMember = "Halls";
-            this.hallsBindingSource2.DataSource = this.iOOP_DatabaseDataSet2;
+            this.hallsBindingSource3.DataMember = "Halls";
+            this.hallsBindingSource3.DataSource = this.iOOP_DatabaseDataSet2;
             // 
             // iOOP_DatabaseDataSet2
             // 
             this.iOOP_DatabaseDataSet2.DataSetName = "IOOP_DatabaseDataSet2";
             this.iOOP_DatabaseDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
+            // hallsBindingSource2
+            // 
+            this.hallsBindingSource2.DataMember = "Halls";
+            // 
             // hallsBindingSource
             // 
-            this.hallsBindingSource.DataMember = "Halls";
             this.hallsBindingSource.DataSource = this.iOOP_DatabaseDataSet;
+            this.hallsBindingSource.Position = 0;
             // 
             // iOOP_DatabaseDataSet
             // 
             this.iOOP_DatabaseDataSet.DataSetName = "IOOP_DatabaseDataSet";
             this.iOOP_DatabaseDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // hallsTableAdapter
-            // 
-            this.hallsTableAdapter.ClearBeforeFill = true;
             // 
             // panelAdd
             // 
@@ -420,13 +378,69 @@
             this.hallsBindingSource1.DataMember = "Halls";
             this.hallsBindingSource1.DataSource = this.iOOP_DatabaseDataSet1;
             // 
+            // hallsTableAdapter
+            // 
+            this.hallsTableAdapter.ClearBeforeFill = true;
+            // 
+            // iOOP_DatabaseDataSet3
+            // 
+            this.iOOP_DatabaseDataSet3.DataSetName = "IOOP_DatabaseDataSet3";
+            this.iOOP_DatabaseDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // hallsBindingSource4
+            // 
+            this.hallsBindingSource4.DataMember = "Halls";
+            this.hallsBindingSource4.DataSource = this.iOOP_DatabaseDataSet3;
+            // 
             // hallsTableAdapter1
             // 
             this.hallsTableAdapter1.ClearBeforeFill = true;
             // 
-            // hallsTableAdapter2
+            // dataGridView1
             // 
-            this.hallsTableAdapter2.ClearBeforeFill = true;
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3});
+            this.dataGridView1.DataSource = this.hallsBindingSource4;
+            this.dataGridView1.Location = new System.Drawing.Point(47, 189);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(428, 276);
+            this.dataGridView1.TabIndex = 9;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "HallID";
+            this.dataGridViewTextBoxColumn1.HeaderText = "HallID";
+            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            this.dataGridViewTextBoxColumn1.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "Capacity";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Capacity";
+            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
+            this.dataGridViewTextBoxColumn2.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "Availability";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Availability";
+            this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.ReadOnly = true;
+            this.dataGridViewTextBoxColumn3.Width = 125;
             // 
             // Form3
             // 
@@ -438,17 +452,17 @@
             this.Controls.Add(this.panelDelete);
             this.Controls.Add(this.panelEdit);
             this.Controls.Add(this.panelAdd);
-            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnDeleteHall);
             this.Controls.Add(this.btnEditHall);
             this.Controls.Add(this.btnAddHalls);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.dataGridView1);
             this.Name = "Form3";
             this.Text = "ManagerHalls";
             this.Load += new System.EventHandler(this.Form3_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hallsBindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hallsBindingSource3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iOOP_DatabaseDataSet2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hallsBindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.hallsBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iOOP_DatabaseDataSet)).EndInit();
             this.panelAdd.ResumeLayout(false);
@@ -458,7 +472,9 @@
             this.panelDelete.ResumeLayout(false);
             this.panelDelete.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iOOP_DatabaseDataSet1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hallsBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iOOP_DatabaseDataSet3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hallsBindingSource4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -470,10 +486,8 @@
         private System.Windows.Forms.Button btnAddHalls;
         private System.Windows.Forms.Button btnEditHall;
         private System.Windows.Forms.Button btnDeleteHall;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private IOOP_DatabaseDataSet iOOP_DatabaseDataSet;
         private System.Windows.Forms.BindingSource hallsBindingSource;
-        private IOOP_DatabaseDataSetTableAdapters.HallsTableAdapter hallsTableAdapter;
         private System.Windows.Forms.Panel panelAdd;
         private System.Windows.Forms.Panel panelEdit;
         private System.Windows.Forms.Panel panelDelete;
@@ -495,13 +509,20 @@
         private System.Windows.Forms.Button btnSaveDelete;
         private IOOP_DatabaseDataSet1 iOOP_DatabaseDataSet1;
         private System.Windows.Forms.BindingSource hallsBindingSource1;
-        private IOOP_DatabaseDataSet1TableAdapters.HallsTableAdapter hallsTableAdapter1;
         private System.Windows.Forms.TextBox txtHallID2;
-        private IOOP_DatabaseDataSet2 iOOP_DatabaseDataSet2;
         private System.Windows.Forms.BindingSource hallsBindingSource2;
-        private IOOP_DatabaseDataSet2TableAdapters.HallsTableAdapter hallsTableAdapter2;
         private System.Windows.Forms.DataGridViewTextBoxColumn hallIDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn capacityDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn availabilityDataGridViewTextBoxColumn;
+        private IOOP_DatabaseDataSet2 iOOP_DatabaseDataSet2;
+        private System.Windows.Forms.BindingSource hallsBindingSource3;
+        private IOOP_DatabaseDataSet2TableAdapters.HallsTableAdapter hallsTableAdapter;
+        private IOOP_DatabaseDataSet3 iOOP_DatabaseDataSet3;
+        private System.Windows.Forms.BindingSource hallsBindingSource4;
+        private IOOP_DatabaseDataSet3TableAdapters.HallsTableAdapter hallsTableAdapter1;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
     }
 }

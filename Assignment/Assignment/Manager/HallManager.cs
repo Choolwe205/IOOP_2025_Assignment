@@ -10,15 +10,17 @@ namespace Assignment.Manager
         private string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\CYBORG\source\repos\IOOP_2025_Assignment\Assignment\Assignment\IOOP_Database.mdf;Integrated Security=True";
         public DataTable GetAllHalls()
         {
+            string query = "SELECT * FROM Halls"; // Ensure this table exists in your DB
+            DataTable dt = new DataTable();
+
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
-                string query = "SELECT HallID, Capacity, Availability FROM Halls"; // Explicitly include HallID
                 SqlDataAdapter adapter = new SqlDataAdapter(query, conn);
-                DataTable dt = new DataTable();
                 adapter.Fill(dt);
-                return dt;
             }
+            return dt;
         }
+
         public DataTable GetHallByID(int hallID)
         {
             string query = "SELECT * FROM Halls WHERE HallID = @HallID"; // Ensure correct column name
