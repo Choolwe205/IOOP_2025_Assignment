@@ -62,7 +62,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
-    <Compile Include="Classfr.cs" />
+    <Compile Include="CustReservation.cs" />
     <Compile Include="CustomerEditDetails.cs">
       <SubType>Form</SubType>
     </Compile>

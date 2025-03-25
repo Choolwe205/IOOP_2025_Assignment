@@ -24,9 +24,13 @@ namespace Assignment
             this.type = type;
         }
 
-        public void CustomerAddReservation()
+        public void CustomerRequestReservation()
         {
-
+            using (SqlConnection connection1=new SqlConnection ("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"C:\\Users\\HP 15\\Source\\Repos\\IOOP_2025_Assignment\\Assignment\\Assignment\\IOOP_Database.mdf\";Integrated Security=True") )
+            {
+                connection1.Open ();
+                using (SqlCommand command1 = new SqlCommand("INSERT INTO request values   ",connection1);
+            }
         }
     }
 }
