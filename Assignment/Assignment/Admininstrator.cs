@@ -39,7 +39,7 @@ namespace Assignment
         {
             Sales_admin sales_form = new Sales_admin();
             sales_form.TopLevel = false;
-            panel2.Controls.Add(sales_form);
+            Main_view_pannel.Controls.Add(sales_form);
             sales_form.BringToFront();
             sales_form.Show();
 
@@ -95,7 +95,7 @@ namespace Assignment
         {
             if (expand_condition == false)
             {
-                SideBar.Width -= 2;
+                SideBar.Width -= 4;
                 if (SideBar.Width == 48)
                 {
                     SideBar_Timer.Stop();
@@ -103,8 +103,8 @@ namespace Assignment
             }
             else if (expand_condition == true)
             {
-                SideBar.Width += 2;
-                if (SideBar.Width == 274)
+                SideBar.Width += 4;
+                if (SideBar.Width == 280)
                 {
                     SideBar_Timer.Stop();
                 }
@@ -116,7 +116,7 @@ namespace Assignment
             sideBar_width = SideBar.Width;
 
 
-            if (sideBar_width == 274)
+            if (sideBar_width == 280)
             {
                 expand_condition = false;
             }

@@ -37,13 +37,13 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.sales_btn = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.Expand = new System.Windows.Forms.Button();
             this.minimize = new System.Windows.Forms.Button();
             this.Close = new System.Windows.Forms.Button();
             this.Maximize = new System.Windows.Forms.Button();
             this.SideBar_Timer = new System.Windows.Forms.Timer(this.components);
+            this.Main_view_pannel = new System.Windows.Forms.Panel();
             this.SideBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
@@ -63,7 +63,7 @@
             this.SideBar.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.SideBar.Location = new System.Drawing.Point(0, 0);
             this.SideBar.Name = "SideBar";
-            this.SideBar.Size = new System.Drawing.Size(58, 944);
+            this.SideBar.Size = new System.Drawing.Size(58, 924);
             this.SideBar.TabIndex = 0;
             this.SideBar.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -173,16 +173,6 @@
             this.sales_btn.UseVisualStyleBackColor = false;
             this.sales_btn.Click += new System.EventHandler(this.sales_btn_Click);
             // 
-            // panel2
-            // 
-            this.panel2.AutoSize = true;
-            this.panel2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.panel2.Location = new System.Drawing.Point(423, 50);
-            this.panel2.MinimumSize = new System.Drawing.Size(886, 683);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(886, 683);
-            this.panel2.TabIndex = 1;
-            // 
             // panel3
             // 
             this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -194,7 +184,7 @@
             this.panel3.Controls.Add(this.Maximize);
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1309, 52);
+            this.panel3.Size = new System.Drawing.Size(1530, 52);
             this.panel3.TabIndex = 2;
             // 
             // Expand
@@ -217,7 +207,7 @@
             this.minimize.FlatAppearance.BorderSize = 0;
             this.minimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.minimize.Image = ((System.Drawing.Image)(resources.GetObject("minimize.Image")));
-            this.minimize.Location = new System.Drawing.Point(1140, 0);
+            this.minimize.Location = new System.Drawing.Point(1361, 0);
             this.minimize.Name = "minimize";
             this.minimize.Size = new System.Drawing.Size(58, 52);
             this.minimize.TabIndex = 0;
@@ -231,7 +221,7 @@
             this.Close.FlatAppearance.BorderSize = 0;
             this.Close.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Close.Image = ((System.Drawing.Image)(resources.GetObject("Close.Image")));
-            this.Close.Location = new System.Drawing.Point(1258, 0);
+            this.Close.Location = new System.Drawing.Point(1479, 0);
             this.Close.Name = "Close";
             this.Close.Size = new System.Drawing.Size(51, 52);
             this.Close.TabIndex = 2;
@@ -245,7 +235,7 @@
             this.Maximize.FlatAppearance.BorderSize = 0;
             this.Maximize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Maximize.Image = ((System.Drawing.Image)(resources.GetObject("Maximize.Image")));
-            this.Maximize.Location = new System.Drawing.Point(1196, 0);
+            this.Maximize.Location = new System.Drawing.Point(1417, 0);
             this.Maximize.Name = "Maximize";
             this.Maximize.Size = new System.Drawing.Size(56, 52);
             this.Maximize.TabIndex = 1;
@@ -257,13 +247,20 @@
             this.SideBar_Timer.Interval = 1;
             this.SideBar_Timer.Tick += new System.EventHandler(this.SideBar_Timer_Tick);
             // 
+            // Main_view_pannel
+            // 
+            this.Main_view_pannel.Location = new System.Drawing.Point(380, 58);
+            this.Main_view_pannel.Name = "Main_view_pannel";
+            this.Main_view_pannel.Size = new System.Drawing.Size(1146, 650);
+            this.Main_view_pannel.TabIndex = 3;
+            // 
             // Admininstrator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1308, 728);
+            this.ClientSize = new System.Drawing.Size(1529, 708);
+            this.Controls.Add(this.Main_view_pannel);
             this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel2);
             this.Controls.Add(this.SideBar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Admininstrator";
@@ -272,7 +269,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -280,7 +276,6 @@
 
         private System.Windows.Forms.Panel SideBar;
         private System.Windows.Forms.Button sales_btn;
-        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
@@ -292,5 +287,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Timer SideBar_Timer;
         private System.Windows.Forms.Button Expand;
+        private System.Windows.Forms.Panel Main_view_pannel;
     }
 }
