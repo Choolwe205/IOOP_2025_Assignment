@@ -39,3 +39,8 @@ C:\Users\ranja\Source\Repos\IOOP_2025_Assignment\Assignment\Assignment\obj\Debug
 C:\Users\ranja\Source\Repos\IOOP_2025_Assignment\Assignment\Assignment\obj\Debug\Assignment.csproj.CoreCompileInputs.cache
 C:\Users\ranja\Source\Repos\IOOP_2025_Assignment\Assignment\Assignment\obj\Debug\Assignment.exe
 C:\Users\ranja\Source\Repos\IOOP_2025_Assignment\Assignment\Assignment\obj\Debug\Assignment.pdb
+C:\Users\ranja\Source\Repos\IOOP_2025_Assignment\Assignment\Assignment\obj\Debug\Assignment.Manager.Form1.resources
+C:\Users\ranja\Source\Repos\IOOP_2025_Assignment\Assignment\Assignment\obj\Debug\Assignment.Manager.Form2.resources
+C:\Users\ranja\Source\Repos\IOOP_2025_Assignment\Assignment\Assignment\obj\Debug\Assignment.Manager.Form3.resources
+C:\Users\ranja\Source\Repos\IOOP_2025_Assignment\Assignment\Assignment\bin\Debug\Manager\Form1.cs
+C:\Users\ranja\Source\Repos\IOOP_2025_Assignment\Assignment\Assignment\bin\Debug\Manager\Form1.Designer.cs
