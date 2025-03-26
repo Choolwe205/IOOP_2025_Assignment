@@ -105,5 +105,10 @@ namespace Assignment
             Form2 form2 = new Form2();
             form2.Show();
         }
+
+        private void Sign_up_form_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
