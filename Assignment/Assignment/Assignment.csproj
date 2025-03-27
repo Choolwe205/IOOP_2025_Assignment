@@ -142,9 +142,27 @@
     <Compile Include="Manager\HallManager.cs" />
     <Compile Include="Manager\Menu.cs" />
     <Compile Include="Manager\MenuManager.cs" />
+    <Compile Include="OrderCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrderCustomer.Designer.cs">
+      <DependentUpon>OrderCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProfileEditCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProfileEditCustomer.Designer.cs">
+      <DependentUpon>ProfileEditCustomer.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Reservation.cs" />
+    <Compile Include="ReservationCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReservationCustomer.Designer.cs">
+      <DependentUpon>ReservationCustomer.cs</DependentUpon>
+    </Compile>
     <Compile Include="Resources\CustomerPanel.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -163,11 +181,23 @@
     <Compile Include="Sign_up_form.Designer.cs">
       <DependentUpon>Sign_up_form.cs</DependentUpon>
     </Compile>
+    <Compile Include="ViewOrderCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewOrderCustomer.Designer.cs">
+      <DependentUpon>ViewOrderCustomer.cs</DependentUpon>
+    </Compile>
     <Compile Include="ViewReservation.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ViewReservation.Designer.cs">
       <DependentUpon>ViewReservation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewReservationCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewReservationCustomer.Designer.cs">
+      <DependentUpon>ViewReservationCustomer.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Admininstrator.resx">
       <DependentUpon>Admininstrator.cs</DependentUpon>
@@ -193,6 +223,9 @@
     <EmbeddedResource Include="Manager\Form3.resx">
       <DependentUpon>Form3.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ProfileEditCustomer.resx">
+      <DependentUpon>ProfileEditCustomer.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -203,6 +236,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="ReservationCustomer.resx">
+      <DependentUpon>ReservationCustomer.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Resources\CustomerPanel.dje-NE.resx">
       <DependentUpon>CustomerPanel.cs</DependentUpon>
     </EmbeddedResource>
@@ -215,8 +251,14 @@
     <EmbeddedResource Include="Sign_up_form.resx">
       <DependentUpon>Sign_up_form.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ViewOrderCustomer.resx">
+      <DependentUpon>ViewOrderCustomer.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ViewReservation.resx">
       <DependentUpon>ViewReservation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewReservationCustomer.resx">
+      <DependentUpon>ViewReservationCustomer.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="IOOP_DatabaseDataSet14.xsc">
       <DependentUpon>IOOP_DatabaseDataSet14.xsd</DependentUpon>
@@ -262,6 +304,8 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>IOOP_Database.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\icons8-profile-272.png" />
+    <None Include="Resources\icons8-profile-271.png" />
     <None Include="Resources\icons8-order-food-27.png" />
     <None Include="Resources\icons8-view-271.png" />
     <None Include="Resources\icons8-view-27.png" />
