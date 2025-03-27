@@ -18,7 +18,7 @@ namespace Assignment.Manager
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new CustomerMainPanel());
+            Application.Run(new FormLogin());
         }
     }
 }
