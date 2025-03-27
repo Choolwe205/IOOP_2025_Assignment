@@ -4,3 +4,9 @@
 
 /.vs
 /Assignment/.vs/Assignment
+bin/ 
+obj/ 
+*.exe 
+*.pdb 
+*.cache 
+*.dll 
