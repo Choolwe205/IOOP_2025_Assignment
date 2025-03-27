@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Configuration;
+using Assignment.Manager;
 
 
 
@@ -41,12 +42,14 @@ namespace Assignment
             }
             else if (page == "Manager")
             {
-                MessageBox.Show("You are a Manager");
+                Form1 form1 = new Form1(txtUsername.Text);
+                form1.Show();
                 return counter = 19;
             }
             else if (page == "Admin")
             {
-                MessageBox.Show("You are an Admin");
+                Admininstrator admin = new Admininstrator(txtUsername.Text);
+                admin.Show();
                 return counter = 19;
             }
             else if (page == "Doesn't Exist")
@@ -105,8 +108,11 @@ namespace Assignment
 
         private void Sign_up_button_Click(object sender, EventArgs e)
         {
-            Sign_up_form Sign_Up_Form = new Sign_up_form(); 
+             
+            Sign_up_form Sign_Up_Form = new Sign_up_form();
             Sign_Up_Form.Show();
+            this.Hide();
+            
             
         }
     }

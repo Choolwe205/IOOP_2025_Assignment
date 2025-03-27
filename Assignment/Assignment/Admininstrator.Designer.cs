@@ -44,6 +44,8 @@
             this.Maximize = new System.Windows.Forms.Button();
             this.SideBar_Timer = new System.Windows.Forms.Timer(this.components);
             this.Main_view_pannel = new System.Windows.Forms.Panel();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.Email_ID_lbl = new System.Windows.Forms.Label();
             this.SideBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
@@ -54,6 +56,8 @@
             this.SideBar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.SideBar.BackColor = System.Drawing.Color.Green;
+            this.SideBar.Controls.Add(this.Email_ID_lbl);
+            this.SideBar.Controls.Add(this.linkLabel1);
             this.SideBar.Controls.Add(this.pictureBox1);
             this.SideBar.Controls.Add(this.button4);
             this.SideBar.Controls.Add(this.button3);
@@ -254,6 +258,26 @@
             this.Main_view_pannel.Size = new System.Drawing.Size(1146, 650);
             this.Main_view_pannel.TabIndex = 3;
             // 
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Location = new System.Drawing.Point(0, 0);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(68, 16);
+            this.linkLabel1.TabIndex = 7;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "linkLabel1";
+            // 
+            // Email_ID_lbl
+            // 
+            this.Email_ID_lbl.AutoSize = true;
+            this.Email_ID_lbl.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.Email_ID_lbl.Location = new System.Drawing.Point(82, 185);
+            this.Email_ID_lbl.Name = "Email_ID_lbl";
+            this.Email_ID_lbl.Size = new System.Drawing.Size(44, 16);
+            this.Email_ID_lbl.TabIndex = 8;
+            this.Email_ID_lbl.Text = "label1";
+            // 
             // Admininstrator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -265,7 +289,9 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Admininstrator";
             this.Text = "Admininstrator";
+            this.Load += new System.EventHandler(this.Admininstrator_Load);
             this.SideBar.ResumeLayout(false);
+            this.SideBar.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -288,5 +314,7 @@
         private System.Windows.Forms.Timer SideBar_Timer;
         private System.Windows.Forms.Button Expand;
         private System.Windows.Forms.Panel Main_view_pannel;
+        private System.Windows.Forms.Label Email_ID_lbl;
+        private System.Windows.Forms.LinkLabel linkLabel1;
     }
 }

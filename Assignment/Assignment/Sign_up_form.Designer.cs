@@ -43,7 +43,6 @@
             this.label7 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.Return = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -159,7 +158,7 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.DarkOrange;
-            this.button1.Location = new System.Drawing.Point(47, 389);
+            this.button1.Location = new System.Drawing.Point(167, 389);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(190, 53);
             this.button1.TabIndex = 12;
@@ -170,24 +169,13 @@
             // Return
             // 
             this.Return.BackColor = System.Drawing.Color.DarkOrange;
-            this.Return.Location = new System.Drawing.Point(284, 389);
+            this.Return.Location = new System.Drawing.Point(394, 389);
             this.Return.Name = "Return";
             this.Return.Size = new System.Drawing.Size(175, 53);
             this.Return.TabIndex = 13;
             this.Return.Text = "Log In";
             this.Return.UseVisualStyleBackColor = false;
             this.Return.Click += new System.EventHandler(this.Return_Click);
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.DarkOrange;
-            this.button2.Location = new System.Drawing.Point(520, 389);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(149, 53);
-            this.button2.TabIndex = 14;
-            this.button2.Text = "View";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // Sign_up_form
             // 
@@ -196,7 +184,6 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1221, 785);
-            this.Controls.Add(this.button2);
             this.Controls.Add(this.Return);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label7);
@@ -235,6 +222,5 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button Return;
-        private System.Windows.Forms.Button button2;
     }
 }

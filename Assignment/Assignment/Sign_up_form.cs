@@ -16,15 +16,16 @@ namespace Assignment
     public partial class Sign_up_form : Form
     {
 
-
-
         public Sign_up_form()
         {
             InitializeComponent();
+            
+
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
+            
 
             string Email = Email_textbox.Text;
             string Name = Name_textbox.Text;
@@ -34,8 +35,8 @@ namespace Assignment
 
             Check_and_add_credentials(Email, Name, Password, Phone_number, Password_again);
 
-            //ADD TO CLASS
-            Current_User current_user = new Current_User(Name, Password, Phone_number, Email, "Customer");
+            
+            
 
 
         }
@@ -43,7 +44,7 @@ namespace Assignment
 
         private void Return_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private bool Check_and_add_credentials(string Email, string Name, string Password, string Phone_number, string Password_again)
@@ -102,6 +103,8 @@ namespace Assignment
 
         private void button2_Click(object sender, EventArgs e)
         {
+
+
             Form2 form2 = new Form2();
             form2.Show();
         }

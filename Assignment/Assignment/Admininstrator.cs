@@ -20,9 +20,10 @@ namespace Assignment
 
 
 
-        public Admininstrator()
+        public Admininstrator(string Email_ID)
         {
             InitializeComponent();
+            Email_ID_lbl.Text = Email_ID;   
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -127,6 +128,11 @@ namespace Assignment
 
 
             SideBar_Timer.Start();
+        }
+
+        private void Admininstrator_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -5,7 +5,7 @@ namespace Assignment.Manager
 {
     public partial class Form1 : Form
     {
-        public Form1()
+        public Form1(string Email_ID)
         {
             InitializeComponent();
         }
@@ -48,6 +48,11 @@ namespace Assignment.Manager
         private void btnClose_Click(object sender, EventArgs e)
         {
             pnlReservationReport.Visible = false;
+        }
+
+        private void btnUpdateProfile_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

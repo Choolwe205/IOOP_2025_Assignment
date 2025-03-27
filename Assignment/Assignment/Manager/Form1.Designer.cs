@@ -104,6 +104,7 @@
             this.btnUpdateProfile.TabIndex = 4;
             this.btnUpdateProfile.Text = "Update Own Profile";
             this.btnUpdateProfile.UseVisualStyleBackColor = false;
+            this.btnUpdateProfile.Click += new System.EventHandler(this.btnUpdateProfile_Click);
             // 
             // btnHallReport
             // 
