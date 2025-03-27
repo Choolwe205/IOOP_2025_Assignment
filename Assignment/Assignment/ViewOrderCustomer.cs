@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Assignment.Resources;
 
 namespace Assignment
 {
@@ -15,6 +16,14 @@ namespace Assignment
         public ViewOrderCustomer()
         {
             InitializeComponent();
+        }
+
+        private void Return_Click(object sender, EventArgs e)
+        {
+            
+            CustomerOrderDetails details = new CustomerOrderDetails();
+            details.ShowDialog();
+            this.Hide();
         }
     }
 }

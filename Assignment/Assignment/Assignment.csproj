@@ -84,6 +84,12 @@
     </Compile>
     <Compile Include="Class1.cs" />
     <Compile Include="Class2.cs" />
+    <Compile Include="CustomerReservationDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerReservationDetails.Designer.cs">
+      <DependentUpon>CustomerReservationDetails.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -148,6 +154,12 @@
     <Compile Include="OrderCustomer.Designer.cs">
       <DependentUpon>OrderCustomer.cs</DependentUpon>
     </Compile>
+    <Compile Include="CustomerOrderDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerOrderDetails.Designer.cs">
+      <DependentUpon>CustomerOrderDetails.cs</DependentUpon>
+    </Compile>
     <Compile Include="ProfileEditCustomer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -205,6 +217,9 @@
     <EmbeddedResource Include="Administrator_2.resx">
       <DependentUpon>Administrator_2.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CustomerReservationDetails.resx">
+      <DependentUpon>CustomerReservationDetails.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -222,6 +237,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Manager\Form3.resx">
       <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrderCustomer.resx">
+      <DependentUpon>OrderCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerOrderDetails.resx">
+      <DependentUpon>CustomerOrderDetails.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ProfileEditCustomer.resx">
       <DependentUpon>ProfileEditCustomer.cs</DependentUpon>
@@ -304,6 +325,30 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>IOOP_Database.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\icons8-close-261.png" />
+    <None Include="Resources\icons8-reservation-1001.png" />
+    <None Include="Resources\icons8-order-1001.png" />
+    <None Include="Resources\icons8-reservation-100.png" />
+    <None Include="Resources\icons8-order-100.png" />
+    <None Include="Resources\drink2.jpeg" />
+    <None Include="Resources\funkyfusion.jpeg" />
+    <None Include="Resources\pretttypassion.jpeg" />
+    <None Include="Resources\lemon.jpg" />
+    <None Include="Resources\apple.jpeg" />
+    <None Include="Resources\prawns.jpeg" />
+    <None Include="Resources\chickenchop.jpg" />
+    <None Include="Resources\meegoren.jpeg" />
+    <None Include="Resources\kkandarr.jpeg" />
+    <None Include="Resources\ayam.jpeg" />
+    <None Include="Resources\icons8-money-271.png" />
+    <None Include="Resources\Mango-Lassi-Square1.jpg" />
+    <None Include="Resources\Mango-Lassi-Square.jpg" />
+    <None Include="Resources\Southern-Fried-Chicken-Burger-1.png" />
+    <None Include="Resources\icons8-money-27.png" />
+    <None Include="Resources\icons8-card-payment-30.png" />
+    <None Include="Resources\icons8-beverage-39.png" />
+    <None Include="Resources\icons8-restaurant-menu-39.png" />
+    <None Include="Resources\icons8-edit-profile-50.png" />
     <None Include="Resources\icons8-profile-272.png" />
     <None Include="Resources\icons8-profile-271.png" />
     <None Include="Resources\icons8-order-food-27.png" />

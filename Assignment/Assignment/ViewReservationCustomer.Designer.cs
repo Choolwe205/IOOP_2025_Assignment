@@ -29,71 +29,103 @@
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.Return = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.Password_again_textbox = new System.Windows.Forms.TextBox();
+            this.Email_textbox = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.panel2.SuspendLayout();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(78)))), ((int)(((byte)(70)))));
-            this.panel2.Controls.Add(this.panel1);
+            this.panel2.Controls.Add(this.groupBox1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(921, 650);
-            this.panel2.TabIndex = 7;
+            this.panel2.TabIndex = 9;
             // 
-            // panel1
+            // groupBox1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(43)))), ((int)(((byte)(49)))));
-            this.panel1.Controls.Add(this.pictureBox3);
-            this.panel1.Controls.Add(this.pictureBox2);
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(921, 57);
-            this.panel1.TabIndex = 6;
+            this.groupBox1.Controls.Add(this.pictureBox4);
+            this.groupBox1.Controls.Add(this.Return);
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.Password_again_textbox);
+            this.groupBox1.Controls.Add(this.Email_textbox);
+            this.groupBox1.Controls.Add(this.label5);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.ForeColor = System.Drawing.Color.White;
+            this.groupBox1.Location = new System.Drawing.Point(108, 91);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(715, 485);
+            this.groupBox1.TabIndex = 43;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Reservation Details";
             // 
-            // pictureBox3
+            // Return
             // 
-            this.pictureBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox3.Image = global::Assignment.Properties.Resources.icons8_maximize_27;
-            this.pictureBox3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.pictureBox3.Location = new System.Drawing.Point(803, 3);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(32, 33);
-            this.pictureBox3.TabIndex = 2;
-            this.pictureBox3.TabStop = false;
+            this.Return.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(43)))), ((int)(((byte)(49)))));
+            this.Return.FlatAppearance.BorderSize = 0;
+            this.Return.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Return.Location = new System.Drawing.Point(254, 330);
+            this.Return.Name = "Return";
+            this.Return.Size = new System.Drawing.Size(175, 53);
+            this.Return.TabIndex = 41;
+            this.Return.Text = "Confirm";
+            this.Return.UseVisualStyleBackColor = false;
+            this.Return.Click += new System.EventHandler(this.Return_Click);
             // 
-            // pictureBox2
+            // label2
             // 
-            this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox2.Image = global::Assignment.Properties.Resources.icons8_minimize_27;
-            this.pictureBox2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.pictureBox2.Location = new System.Drawing.Point(742, 3);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(39, 33);
-            this.pictureBox2.TabIndex = 2;
-            this.pictureBox2.TabStop = false;
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(116, 192);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(151, 20);
+            this.label2.TabIndex = 33;
+            this.label2.Text = "Enter Your Email";
             // 
-            // pictureBox1
+            // Password_again_textbox
             // 
-            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox1.Image = global::Assignment.Properties.Resources.icons8_close_26;
-            this.pictureBox1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.pictureBox1.Location = new System.Drawing.Point(859, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(35, 33);
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
+            this.Password_again_textbox.Location = new System.Drawing.Point(295, 247);
+            this.Password_again_textbox.Name = "Password_again_textbox";
+            this.Password_again_textbox.Size = new System.Drawing.Size(235, 27);
+            this.Password_again_textbox.TabIndex = 40;
+            // 
+            // Email_textbox
+            // 
+            this.Email_textbox.Location = new System.Drawing.Point(295, 189);
+            this.Email_textbox.Name = "Email_textbox";
+            this.Email_textbox.Size = new System.Drawing.Size(235, 27);
+            this.Email_textbox.TabIndex = 34;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(116, 250);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(134, 20);
+            this.label5.TabIndex = 39;
+            this.label5.Text = "Reservation ID";
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::Assignment.Properties.Resources.icons8_reservation_100;
+            this.pictureBox4.Location = new System.Drawing.Point(295, 43);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(121, 114);
+            this.pictureBox4.TabIndex = 44;
+            this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
             // 
             // ViewReservationCustomer
             // 
@@ -105,10 +137,9 @@
             this.Name = "ViewReservationCustomer";
             this.Text = "ViewReservationCustomer";
             this.panel2.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -116,9 +147,12 @@
         #endregion
 
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Button Return;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox Password_again_textbox;
+        private System.Windows.Forms.TextBox Email_textbox;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.PictureBox pictureBox4;
     }
 }

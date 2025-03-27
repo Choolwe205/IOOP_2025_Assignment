@@ -16,5 +16,17 @@ namespace Assignment
         {
             InitializeComponent();
         }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Return_Click(object sender, EventArgs e)
+        {
+            CustomerReservationDetails details = new CustomerReservationDetails();
+            details.ShowDialog();
+            this.Hide();
+        }
     }
 }
