@@ -307,6 +307,7 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>IOOP_Database.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\icons8-event-accepted-50.png" />
     <None Include="Resources\icons8-close-261.png" />
     <None Include="Resources\icons8-reservation-1001.png" />
     <None Include="Resources\icons8-order-1001.png" />
