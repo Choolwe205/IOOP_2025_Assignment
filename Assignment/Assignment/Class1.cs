@@ -34,8 +34,6 @@ namespace Assignment
             string validity = "valid";
             int space_count = 0;
             
-
-            
             foreach (char Letter in Email)
             {
                 if (Letter.ToString() == " ")

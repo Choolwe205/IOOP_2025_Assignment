@@ -67,7 +67,7 @@ namespace Assignment.Resources
             FormLogin formLogin = new FormLogin();
             formLogin.Show();
             this.Hide();
-           
+            MessageBox.Show("Exited");
         }
 
         private void button3_Click(object sender, EventArgs e)

@@ -31,6 +31,8 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Admininstrator));
             this.SideBar = new System.Windows.Forms.Panel();
+            this.Email_ID_lbl = new System.Windows.Forms.Label();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -44,8 +46,6 @@
             this.Maximize = new System.Windows.Forms.Button();
             this.SideBar_Timer = new System.Windows.Forms.Timer(this.components);
             this.Main_view_pannel = new System.Windows.Forms.Panel();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-            this.Email_ID_lbl = new System.Windows.Forms.Label();
             this.SideBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
@@ -70,6 +70,26 @@
             this.SideBar.Size = new System.Drawing.Size(58, 924);
             this.SideBar.TabIndex = 0;
             this.SideBar.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // Email_ID_lbl
+            // 
+            this.Email_ID_lbl.AutoSize = true;
+            this.Email_ID_lbl.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.Email_ID_lbl.Location = new System.Drawing.Point(82, 185);
+            this.Email_ID_lbl.Name = "Email_ID_lbl";
+            this.Email_ID_lbl.Size = new System.Drawing.Size(44, 16);
+            this.Email_ID_lbl.TabIndex = 8;
+            this.Email_ID_lbl.Text = "label1";
+            // 
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Location = new System.Drawing.Point(0, 0);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(68, 16);
+            this.linkLabel1.TabIndex = 7;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "linkLabel1";
             // 
             // pictureBox1
             // 
@@ -255,28 +275,8 @@
             // 
             this.Main_view_pannel.Location = new System.Drawing.Point(380, 58);
             this.Main_view_pannel.Name = "Main_view_pannel";
-            this.Main_view_pannel.Size = new System.Drawing.Size(1146, 650);
+            this.Main_view_pannel.Size = new System.Drawing.Size(980, 595);
             this.Main_view_pannel.TabIndex = 3;
-            // 
-            // linkLabel1
-            // 
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Location = new System.Drawing.Point(0, 0);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(68, 16);
-            this.linkLabel1.TabIndex = 7;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "linkLabel1";
-            // 
-            // Email_ID_lbl
-            // 
-            this.Email_ID_lbl.AutoSize = true;
-            this.Email_ID_lbl.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.Email_ID_lbl.Location = new System.Drawing.Point(82, 185);
-            this.Email_ID_lbl.Name = "Email_ID_lbl";
-            this.Email_ID_lbl.Size = new System.Drawing.Size(44, 16);
-            this.Email_ID_lbl.TabIndex = 8;
-            this.Email_ID_lbl.Text = "label1";
             // 
             // Admininstrator
             // 
