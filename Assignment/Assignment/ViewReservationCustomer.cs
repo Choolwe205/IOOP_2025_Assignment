@@ -24,9 +24,12 @@ namespace Assignment
 
         private void Return_Click(object sender, EventArgs e)
         {
-            CustomerReservationDetails details = new CustomerReservationDetails();
-            details.ShowDialog();
-            this.Hide();
+            
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Details viewed");   
         }
     }
 }
