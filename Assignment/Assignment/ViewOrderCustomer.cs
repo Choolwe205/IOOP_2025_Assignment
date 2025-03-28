@@ -21,9 +21,12 @@ namespace Assignment
         private void Return_Click(object sender, EventArgs e)
         {
             
-            CustomerOrderDetails details = new CustomerOrderDetails();
-            details.ShowDialog();
-            this.Hide();
+           
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

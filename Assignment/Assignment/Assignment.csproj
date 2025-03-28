@@ -84,12 +84,6 @@
     </Compile>
     <Compile Include="Class1.cs" />
     <Compile Include="Class2.cs" />
-    <Compile Include="CustomerReservationDetails.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CustomerReservationDetails.Designer.cs">
-      <DependentUpon>CustomerReservationDetails.cs</DependentUpon>
-    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -154,12 +148,6 @@
     <Compile Include="OrderCustomer.Designer.cs">
       <DependentUpon>OrderCustomer.cs</DependentUpon>
     </Compile>
-    <Compile Include="CustomerOrderDetails.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CustomerOrderDetails.Designer.cs">
-      <DependentUpon>CustomerOrderDetails.cs</DependentUpon>
-    </Compile>
     <Compile Include="ProfileEditCustomer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -217,9 +205,6 @@
     <EmbeddedResource Include="Administrator_2.resx">
       <DependentUpon>Administrator_2.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CustomerReservationDetails.resx">
-      <DependentUpon>CustomerReservationDetails.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -240,9 +225,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="OrderCustomer.resx">
       <DependentUpon>OrderCustomer.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CustomerOrderDetails.resx">
-      <DependentUpon>CustomerOrderDetails.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ProfileEditCustomer.resx">
       <DependentUpon>ProfileEditCustomer.cs</DependentUpon>
