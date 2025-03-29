@@ -168,6 +168,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Request.cs" />
     <Compile Include="Reservation.cs" />
     <Compile Include="ReservationCustomer.cs">
       <SubType>Form</SubType>
@@ -325,6 +326,8 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>IOOP_Database.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\icons8-money-272.png" />
+    <None Include="Resources\Screenshot 2025-03-29 174549.png" />
     <None Include="Resources\icons8-event-accepted-50.png" />
     <None Include="Resources\icons8-close-261.png" />
     <None Include="Resources\icons8-reservation-1001.png" />

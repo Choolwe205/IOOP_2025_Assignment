@@ -90,7 +90,13 @@ namespace Assignment.Resources
 
         private void button4_Click(object sender, EventArgs e)
         {
+            mainpanel.Controls.Clear();
+            ReservationCustomer reservationCustomer = new ReservationCustomer();
 
+            reservationCustomer.TopLevel = false;
+            reservationCustomer.Dock = DockStyle.Fill;
+            mainpanel.Controls.Add(reservationCustomer);
+            reservationCustomer.Show();
         }
 
         private void button1_Click(object sender, EventArgs e)
