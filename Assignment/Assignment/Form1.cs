@@ -37,7 +37,8 @@ namespace Assignment
             }
             else if (page == "Reservation Coordinator")
             {
-                MessageBox.Show("You are a Reservation Coorrdinator");
+                Main_Dashboard main_Dashboard = new Main_Dashboard(txtUsername.Text);
+                main_Dashboard.Show();
                 return counter = 19;
             }
             else if (page == "Manager")

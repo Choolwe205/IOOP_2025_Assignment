@@ -84,6 +84,12 @@
     </Compile>
     <Compile Include="Class1.cs" />
     <Compile Include="Class2.cs" />
+    <Compile Include="Food_Profile.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Food_Profile.Designer.cs">
+      <DependentUpon>Food_Profile.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -148,6 +154,12 @@
     <Compile Include="OrderCustomer.Designer.cs">
       <DependentUpon>OrderCustomer.cs</DependentUpon>
     </Compile>
+    <Compile Include="Orders_controls.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Orders_controls.Designer.cs">
+      <DependentUpon>Orders_controls.cs</DependentUpon>
+    </Compile>
     <Compile Include="ProfileEditCustomer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -205,6 +217,9 @@
     <EmbeddedResource Include="Administrator_2.resx">
       <DependentUpon>Administrator_2.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Food_Profile.resx">
+      <DependentUpon>Food_Profile.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -225,6 +240,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="OrderCustomer.resx">
       <DependentUpon>OrderCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Orders_controls.resx">
+      <DependentUpon>Orders_controls.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ProfileEditCustomer.resx">
       <DependentUpon>ProfileEditCustomer.cs</DependentUpon>

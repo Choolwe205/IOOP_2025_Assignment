@@ -52,6 +52,7 @@
             this.btnCustomerReq.TabIndex = 8;
             this.btnCustomerReq.Text = "Customer Request";
             this.btnCustomerReq.UseVisualStyleBackColor = true;
+            this.btnCustomerReq.Click += new System.EventHandler(this.btnCustomerReq_Click);
             // 
             // btnHall
             // 

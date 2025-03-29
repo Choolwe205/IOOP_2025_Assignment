@@ -154,5 +154,15 @@ namespace Assignment.Manager
         {
             pnlDeleteItem.Visible = true;
         }
+
+        private void pnlAddItem_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void dgvMenu_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

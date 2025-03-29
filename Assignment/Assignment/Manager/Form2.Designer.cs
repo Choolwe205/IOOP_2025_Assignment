@@ -59,13 +59,13 @@
             this.menuBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.menuBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
             this.dgvMenu = new System.Windows.Forms.DataGridView();
-            this.menuBindingSource4 = new System.Windows.Forms.BindingSource(this.components);
-            this.iOOP_DatabaseDataSet = new Assignment.IOOP_DatabaseDataSet();
-            this.menuBindingSource5 = new System.Windows.Forms.BindingSource(this.components);
-            this.menuTableAdapter = new Assignment.IOOP_DatabaseDataSetTableAdapters.MenuTableAdapter();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.menuBindingSource5 = new System.Windows.Forms.BindingSource(this.components);
+            this.iOOP_DatabaseDataSet = new Assignment.IOOP_DatabaseDataSet();
+            this.menuBindingSource4 = new System.Windows.Forms.BindingSource(this.components);
+            this.menuTableAdapter = new Assignment.IOOP_DatabaseDataSetTableAdapters.MenuTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.menuBindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.menuBindingSource)).BeginInit();
             this.pnlAddItem.SuspendLayout();
@@ -74,9 +74,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.menuBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.menuBindingSource3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMenu)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.menuBindingSource4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iOOP_DatabaseDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.menuBindingSource5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iOOP_DatabaseDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.menuBindingSource4)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -153,6 +153,7 @@
             this.pnlAddItem.Size = new System.Drawing.Size(283, 409);
             this.pnlAddItem.TabIndex = 6;
             this.pnlAddItem.Visible = false;
+            this.pnlAddItem.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlAddItem_Paint);
             // 
             // btnSaveAdd
             // 
@@ -360,24 +361,7 @@
             this.dgvMenu.RowTemplate.Height = 24;
             this.dgvMenu.Size = new System.Drawing.Size(547, 236);
             this.dgvMenu.TabIndex = 9;
-            // 
-            // menuBindingSource4
-            // 
-            this.menuBindingSource4.DataMember = "Menu";
-            // 
-            // iOOP_DatabaseDataSet
-            // 
-            this.iOOP_DatabaseDataSet.DataSetName = "IOOP_DatabaseDataSet";
-            this.iOOP_DatabaseDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // menuBindingSource5
-            // 
-            this.menuBindingSource5.DataMember = "Menu";
-            this.menuBindingSource5.DataSource = this.iOOP_DatabaseDataSet;
-            // 
-            // menuTableAdapter
-            // 
-            this.menuTableAdapter.ClearBeforeFill = true;
+            this.dgvMenu.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvMenu_CellContentClick);
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -405,6 +389,24 @@
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
             this.dataGridViewTextBoxColumn3.ReadOnly = true;
             this.dataGridViewTextBoxColumn3.Width = 125;
+            // 
+            // menuBindingSource5
+            // 
+            this.menuBindingSource5.DataMember = "Menu";
+            this.menuBindingSource5.DataSource = this.iOOP_DatabaseDataSet;
+            // 
+            // iOOP_DatabaseDataSet
+            // 
+            this.iOOP_DatabaseDataSet.DataSetName = "IOOP_DatabaseDataSet";
+            this.iOOP_DatabaseDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // menuBindingSource4
+            // 
+            this.menuBindingSource4.DataMember = "Menu";
+            // 
+            // menuTableAdapter
+            // 
+            this.menuTableAdapter.ClearBeforeFill = true;
             // 
             // Form2
             // 
@@ -435,9 +437,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.menuBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.menuBindingSource3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMenu)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.menuBindingSource4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iOOP_DatabaseDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.menuBindingSource5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iOOP_DatabaseDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.menuBindingSource4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -10,3 +10,7 @@ obj/
 *.pdb 
 *.cache 
 *.dll 
+"Assignment/Assignment/*.mdf" 
+"Assignment/Assignment/*.ldf" 
+"Assignment/Assignment/*.mdf" 
+"Assignment/Assignment/*.ldf" 

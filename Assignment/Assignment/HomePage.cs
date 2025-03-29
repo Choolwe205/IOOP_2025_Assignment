@@ -12,7 +12,7 @@ namespace Assignment
 {
     public partial class Main_Dashboard : Form
     {
-        public Main_Dashboard()
+        public Main_Dashboard(string Email_ID)
         {
             InitializeComponent();
         }
@@ -23,6 +23,11 @@ namespace Assignment
             ViewReservation obj = new ViewReservation();
             obj.ShowDialog();
             this.Close();
+        }
+
+        private void btnCustomerReq_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
