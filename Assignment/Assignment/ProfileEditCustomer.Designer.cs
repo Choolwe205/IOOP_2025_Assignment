@@ -125,6 +125,7 @@
             this.groupBox1.TabIndex = 27;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "EDIT DETAILS";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // textBox1
             // 
@@ -152,6 +153,7 @@
             this.pictureBox4.Size = new System.Drawing.Size(59, 50);
             this.pictureBox4.TabIndex = 43;
             this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
             // 
             // label6
             // 
