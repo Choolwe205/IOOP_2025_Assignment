@@ -64,6 +64,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddReservation.cs" />
     <Compile Include="Admininstrator.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -108,6 +109,7 @@
     </Compile>
     <Compile Include="Class1.cs" />
     <Compile Include="Class2.cs" />
+    <Compile Include="EditDeleteReservation.cs" />
     <Compile Include="Food_Profile.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -126,11 +128,11 @@
     <Compile Include="Form2.Designer.cs">
       <DependentUpon>Form2.cs</DependentUpon>
     </Compile>
-    <Compile Include="HomePage.cs">
+    <Compile Include="Reservation Coordinator HomePage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="HomePage.Designer.cs">
-      <DependentUpon>HomePage.cs</DependentUpon>
+    <Compile Include="Reservation Coordinator HomePage.Designer.cs">
+      <DependentUpon>Reservation Coordinator HomePage.cs</DependentUpon>
     </Compile>
     <Compile Include="IOOP_DatabaseDataSet14.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -141,6 +143,12 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>IOOP_DatabaseDataSet15.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ManageReservations.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageReservations.Designer.cs">
+      <DependentUpon>ManageReservations.cs</DependentUpon>
     </Compile>
     <Compile Include="Managers_admin.cs">
       <SubType>Form</SubType>
@@ -219,18 +227,12 @@
     <Compile Include="Sign_up_form.Designer.cs">
       <DependentUpon>Sign_up_form.cs</DependentUpon>
     </Compile>
-    <Compile Include="ViewOrderClass.cs" />
+    <Compile Include="Verifying.cs" />
     <Compile Include="ViewOrderCustomer.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ViewOrderCustomer.Designer.cs">
       <DependentUpon>ViewOrderCustomer.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ViewReservation.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ViewReservation.Designer.cs">
-      <DependentUpon>ViewReservation.cs</DependentUpon>
     </Compile>
     <Compile Include="ViewReservationCustomer.cs">
       <SubType>Form</SubType>
@@ -238,7 +240,12 @@
     <Compile Include="ViewReservationCustomer.Designer.cs">
       <DependentUpon>ViewReservationCustomer.cs</DependentUpon>
     </Compile>
-    <Compile Include="View_ReservationClass.cs" />
+    <Compile Include="View_Requests_Coordinator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View_Requests_Coordinator.Designer.cs">
+      <DependentUpon>View_Requests_Coordinator.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Admininstrator.resx">
       <DependentUpon>Admininstrator.cs</DependentUpon>
     </EmbeddedResource>
@@ -266,8 +273,11 @@
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="HomePage.resx">
-      <DependentUpon>HomePage.cs</DependentUpon>
+    <EmbeddedResource Include="Reservation Coordinator HomePage.resx">
+      <DependentUpon>Reservation Coordinator HomePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageReservations.resx">
+      <DependentUpon>ManageReservations.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Manager\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -315,11 +325,11 @@
     <EmbeddedResource Include="ViewOrderCustomer.resx">
       <DependentUpon>ViewOrderCustomer.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ViewReservation.resx">
-      <DependentUpon>ViewReservation.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="ViewReservationCustomer.resx">
       <DependentUpon>ViewReservationCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View_Requests_Coordinator.resx">
+      <DependentUpon>View_Requests_Coordinator.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="IOOP_DatabaseDataSet14.xsc">
       <DependentUpon>IOOP_DatabaseDataSet14.xsd</DependentUpon>
