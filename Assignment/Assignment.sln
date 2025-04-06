@@ -5,9 +5,9 @@ VisualStudioVersion = 17.12.35527.113
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assignment", "Assignment\Assignment.csproj", "{0608DF46-7E79-4462-ADF1-F7A22262B2F3}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8F2CA576-C757-4BF1-835A-F82F50594252}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6631F46B-08C9-4AEB-B3D7-4D2A2384B056}"
 	ProjectSection(SolutionItems) = preProject
-		Each_user.cs = Each_user.cs
+		View_ReservationClass.cs = View_ReservationClass.cs
 	EndProjectSection
 EndProject
 Global

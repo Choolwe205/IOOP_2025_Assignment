@@ -64,12 +64,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AddUsers.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AddUsers.Designer.cs">
-      <DependentUpon>AddUsers.cs</DependentUpon>
-    </Compile>
+    <Compile Include="AddReservation.cs" />
     <Compile Include="Admininstrator.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -109,11 +104,9 @@
     </Compile>
     <Compile Include="Class1.cs" />
     <Compile Include="Class2.cs" />
-    <Compile Include="ChefClass1.cs" />
-    <Compile Include="Each_User_class.cs" />
-    <Compile Include="Edit_Users.cs" />
-    <Compile Include="FeedbackForm.cs">
-      <SubType>Form</SubType>
+    <Compile Include="EditDeleteReservation.cs" />
+    <Compile Include="Food_Profile.cs">
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="FeedbackForm.Designer.cs">
       <DependentUpon>FeedbackForm.cs</DependentUpon>
@@ -130,15 +123,11 @@
     <Compile Include="Form2.Designer.cs">
       <DependentUpon>Form2.cs</DependentUpon>
     </Compile>
-    <Compile Include="Ingredients.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Ingredients.xsd</DependentUpon>
+    <Compile Include="Reservation Coordinator HomePage.cs">
+      <SubType>Form</SubType>
     </Compile>
-    <Compile Include="IOOP_DatabaseDataSet101.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>IOOP_DatabaseDataSet101.xsd</DependentUpon>
+    <Compile Include="Reservation Coordinator HomePage.Designer.cs">
+      <DependentUpon>Reservation Coordinator HomePage.cs</DependentUpon>
     </Compile>
     <Compile Include="IOOP_DatabaseDataSet14.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -150,45 +139,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>IOOP_DatabaseDataSet15.xsd</DependentUpon>
     </Compile>
-    <Compile Include="IOOP_DatabaseDataSet22.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>IOOP_DatabaseDataSet22.xsd</DependentUpon>
+    <Compile Include="ManageReservations.cs">
+      <SubType>Form</SubType>
     </Compile>
-    <Compile Include="IOOP_DatabaseDataSet32.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>IOOP_DatabaseDataSet32.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="IOOP_DatabaseDataSet41.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>IOOP_DatabaseDataSet41.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="IOOP_DatabaseDataSet51.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>IOOP_DatabaseDataSet51.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="IOOP_DatabaseDataSet61.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>IOOP_DatabaseDataSet61.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="IOOP_DatabaseDataSet71.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>IOOP_DatabaseDataSet71.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="IOOP_DatabaseDataSet81.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>IOOP_DatabaseDataSet81.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="IOOP_DatabaseDataSet91.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>IOOP_DatabaseDataSet91.xsd</DependentUpon>
+    <Compile Include="ManageReservations.Designer.cs">
+      <DependentUpon>ManageReservations.cs</DependentUpon>
     </Compile>
     <Compile Include="Managers_admin.cs">
       <SubType>Form</SubType>
@@ -235,9 +190,19 @@
     <Compile Include="ProfileEditClass.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Request.cs" />
-    <Compile Include="Retrieve_user_info.cs" />
-    <Compile Include="Sales.cs" />
+    <Compile Include="Requests.cs" />
+    <Compile Include="ReservationCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReservationCustomer.Designer.cs">
+      <DependentUpon>ReservationCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\CustomerPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resources\CustomerPanel.Designer.cs">
+      <DependentUpon>CustomerPanel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Sales_admin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -250,15 +215,25 @@
     <Compile Include="Sign_up_form.Designer.cs">
       <DependentUpon>Sign_up_form.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserFeedback.cs">
-      <SubType>UserControl</SubType>
+    <Compile Include="Verifying.cs" />
+    <Compile Include="ViewOrderCustomer.cs">
+      <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UserFeedback.Designer.cs">
-      <DependentUpon>UserFeedback.cs</DependentUpon>
+    <Compile Include="ViewOrderCustomer.Designer.cs">
+      <DependentUpon>ViewOrderCustomer.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="AddUsers.resx">
-      <DependentUpon>AddUsers.cs</DependentUpon>
-    </EmbeddedResource>
+    <Compile Include="ViewReservationCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewReservationCustomer.Designer.cs">
+      <DependentUpon>ViewReservationCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View_Requests_Coordinator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View_Requests_Coordinator.Designer.cs">
+      <DependentUpon>View_Requests_Coordinator.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Admininstrator.resx">
       <DependentUpon>Admininstrator.cs</DependentUpon>
     </EmbeddedResource>
@@ -286,8 +261,11 @@
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Managers_admin.resx">
-      <DependentUpon>Managers_admin.cs</DependentUpon>
+    <EmbeddedResource Include="Reservation Coordinator HomePage.resx">
+      <DependentUpon>Reservation Coordinator HomePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageReservations.resx">
+      <DependentUpon>ManageReservations.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Manager\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -317,31 +295,15 @@
     <EmbeddedResource Include="Sign_up_form.resx">
       <DependentUpon>Sign_up_form.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserFeedback.resx">
-      <DependentUpon>UserFeedback.cs</DependentUpon>
+    <EmbeddedResource Include="ViewOrderCustomer.resx">
+      <DependentUpon>ViewOrderCustomer.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="Ingredients.xsc">
-      <DependentUpon>Ingredients.xsd</DependentUpon>
-    </None>
-    <None Include="Ingredients.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>Ingredients.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Ingredients.xss">
-      <DependentUpon>Ingredients.xsd</DependentUpon>
-    </None>
-    <None Include="IOOP_DatabaseDataSet101.xsc">
-      <DependentUpon>IOOP_DatabaseDataSet101.xsd</DependentUpon>
-    </None>
-    <None Include="IOOP_DatabaseDataSet101.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>IOOP_DatabaseDataSet101.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="IOOP_DatabaseDataSet101.xss">
-      <DependentUpon>IOOP_DatabaseDataSet101.xsd</DependentUpon>
-    </None>
+    <EmbeddedResource Include="ViewReservationCustomer.resx">
+      <DependentUpon>ViewReservationCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View_Requests_Coordinator.resx">
+      <DependentUpon>View_Requests_Coordinator.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="IOOP_DatabaseDataSet14.xsc">
       <DependentUpon>IOOP_DatabaseDataSet14.xsd</DependentUpon>
     </None>
