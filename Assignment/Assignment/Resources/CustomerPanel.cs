@@ -12,11 +12,12 @@ namespace Assignment.Resources
 {
     public partial class CustomerMainPanel : Form
     {
-        public CustomerMainPanel()
+        public CustomerMainPanel(string Email_ID)
         {
             InitializeComponent();
         }
 
+        //
         private void CustomerMainPanel_Load(object sender, EventArgs e)
         {
 
@@ -138,21 +139,23 @@ namespace Assignment.Resources
 
         private void button5_Click(object sender, EventArgs e)
         {
-            // Check if the panel already has a child form and remove it
             mainpanel.Controls.Clear();
+            Form2 profile = new Form2();
 
-            // Create a new instance of the child form
-            ProfileEditCustomer profileEditCustomer = new ProfileEditCustomer();
+            profile.TopLevel = false;
+            profile.Dock = DockStyle.Fill;
+            mainpanel.Controls.Add(profile);
+            profile.Show();
+        }
 
-            // Set it as a non-top-level control
-            profileEditCustomer.TopLevel = false;
+        private void mainpanel_Paint(object sender, PaintEventArgs e)
+        {
 
-            // Dock the form inside the panel
-            profileEditCustomer.Dock = DockStyle.Fill;
+        }
 
-            // Add the form to the panel and show it
-            mainpanel.Controls.Add(profileEditCustomer);
-            profileEditCustomer.Show();
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
