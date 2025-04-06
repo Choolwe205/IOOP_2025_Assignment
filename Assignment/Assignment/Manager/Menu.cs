@@ -2,17 +2,15 @@
 {
     public class Menu
     {
-        public string Food_ID { get; set; }
+        public string FoodID { get; set; }
         public string Description { get; set; }
         public decimal Price { get; set; }
-        public byte[] Picture { get; set; } 
 
-        public Menu(string foodID, string description, decimal price, byte[] image)
+        public Menu(string foodID, string description, decimal price)
         {
-            Food_ID = foodID;
+            FoodID = foodID;
             Description = description;
             Price = price;
-            Picture = image;
         }
     }
 }

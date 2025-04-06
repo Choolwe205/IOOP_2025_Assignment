@@ -7,12 +7,12 @@ namespace Assignment.Manager
 {
     public class HallManager
     {
-        private string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\hp\Source\Repos\IOOP_2025_Assignment\Assignment\Assignment\IOOP_Database.mdf;Integrated Security=True";
+        private string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\ranja\Source\Repos\IOOP_2025_Assignment\Assignment\Assignment\IOOP_Database.mdf;Integrated Security=True";
         public DataTable GetAllHalls()
         {
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
-                string query = "SELECT Hall_ID, Capacity, Availability FROM Halls"; // Explicitly include HallID
+                string query = "SELECT HallID, Capacity, Availability FROM Halls"; // Explicitly include HallID
                 SqlDataAdapter adapter = new SqlDataAdapter(query, conn);
                 DataTable dt = new DataTable();
                 adapter.Fill(dt);
@@ -21,12 +21,12 @@ namespace Assignment.Manager
         }
         public DataTable GetHallByID(int hallID)
         {
-            string query = "SELECT * FROM Halls WHERE Hall_ID = @Hall_ID"; // Ensure correct column name
+            string query = "SELECT * FROM Halls WHERE HallID = @HallID"; // Ensure correct column name
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
                 using (SqlCommand cmd = new SqlCommand(query, conn))
                 {
-                    cmd.Parameters.AddWithValue("@Hall_ID", hallID);
+                    cmd.Parameters.AddWithValue("@HallID", hallID);
                     SqlDataAdapter adapter = new SqlDataAdapter(cmd);
                     DataTable dt = new DataTable();
                     adapter.Fill(dt);
@@ -56,9 +56,9 @@ namespace Assignment.Manager
         {
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
-                string query = "UPDATE Halls SET Capacity = @Capacity, Availability = @Availability WHERE Hall_ID = @Hall_ID";
+                string query = "UPDATE Halls SET Capacity = @Capacity, Availability = @Availability WHERE HallID = @HallID";
                 SqlCommand cmd = new SqlCommand(query, conn);
-                cmd.Parameters.AddWithValue("@Hall_ID", hallID);
+                cmd.Parameters.AddWithValue("@HallID", hallID);
                 cmd.Parameters.AddWithValue("@Capacity", capacity);
                 cmd.Parameters.AddWithValue("@Availability", availability);
 
@@ -72,9 +72,9 @@ namespace Assignment.Manager
         {
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
-                string query = "DELETE FROM Halls WHERE Hall_ID = @Hall_ID";
+                string query = "DELETE FROM Halls WHERE HallID = @HallID";
                 SqlCommand cmd = new SqlCommand(query, conn);
-                cmd.Parameters.AddWithValue("@Hall_ID", hallID);
+                cmd.Parameters.AddWithValue("@HallID", hallID);
 
                 conn.Open();
                 cmd.ExecuteNonQuery();

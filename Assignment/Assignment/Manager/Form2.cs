@@ -7,17 +7,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.IO;
-
 
 namespace Assignment.Manager
 {
     public partial class Form2 : Form
     {
         private MenuManager MenuManager = new MenuManager();
-        private byte[] selectedImageBytes = null;
-
-
         public Form2()
         {
             InitializeComponent();
@@ -25,9 +20,8 @@ namespace Assignment.Manager
 
         private void Form2_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'iOOP_DatabaseDataSet3.Menu' table. You can move, or remove it, as needed.
-            //this.menuTableAdapter2.Fill(this.iOOP_DatabaseDataSet3.Menu);
-
+            // TODO: This line of code loads data into the 'iOOP_DatabaseDataSet.Menu' table. You can move, or remove it, as needed.
+            this.menuTableAdapter.Fill(this.iOOP_DatabaseDataSet.Menu);
 
 
 
@@ -62,23 +56,22 @@ namespace Assignment.Manager
             string foodID = txtAddItem.Text;
             decimal price;
 
+     
+
             if (!decimal.TryParse(txtPrice1.Text, out price))
             {
                 MessageBox.Show("Invalid price. Enter a valid number.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
-            bool success = MenuManager.AddMenuItem(foodID, txtDescription1.Text, price, selectedImageBytes);
-
+            bool success = MenuManager.AddMenuItem(foodID, txtDescription1.Text, price);
             if (success)
             {
                 MessageBox.Show("Item added successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                LoadMenuItems();
+                LoadMenuItems(); // Refresh menu list
                 txtAddItem.Clear();
                 txtDescription1.Clear();
                 txtPrice1.Clear();
-                pictureBoxAdd.Image = null; // Clear Image
-                selectedImageBytes = null;
                 pnlAddItem.Visible = false;
             }
             else
@@ -89,6 +82,7 @@ namespace Assignment.Manager
 
 
         private void txtSaveEdit_Click(object sender, EventArgs e)
+     
         {
             if (string.IsNullOrWhiteSpace(txtEditID.Text) ||
                 string.IsNullOrWhiteSpace(txtEditDescription.Text) ||
@@ -101,20 +95,20 @@ namespace Assignment.Manager
             string foodID = txtEditID.Text;
             decimal price;
 
+       
+
             if (!decimal.TryParse(txtEditPrice.Text, out price))
             {
                 MessageBox.Show("Invalid price. Enter a valid number.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
-            bool success = MenuManager.UpdateMenuItem(foodID, txtEditDescription.Text, price, selectedImageBytes);
+            bool success = MenuManager.UpdateMenuItem(foodID, txtEditDescription.Text, price);
 
             if (success)
             {
                 MessageBox.Show("Item updated successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 LoadMenuItems(); // Refresh menu list
-                pictureBoxEdit.Image = null; // Clear image after update
-                selectedImageBytes = null; // Reset image bytes
                 pnlEditItem.Visible = false;
             }
             else
@@ -161,41 +155,14 @@ namespace Assignment.Manager
             pnlDeleteItem.Visible = true;
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void pnlAddItem_Paint(object sender, PaintEventArgs e)
         {
 
         }
 
-        private void btnSelectImage_Click(object sender, EventArgs e)
+        private void dgvMenu_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            OpenFileDialog openFileDialog = new OpenFileDialog
-            {
-                Filter = "Image Files|*.jpg;*.jpeg;*.png;*.bmp",
-                Title = "Select an Image"
-            };
 
-            if (openFileDialog.ShowDialog() == DialogResult.OK)
-            {
-                string imagePath = openFileDialog.FileName;
-                selectedImageBytes = File.ReadAllBytes(imagePath); // Convert image to byte array
-                pictureBoxAdd.Image = Image.FromFile(imagePath); // Display image in PictureBox
-            }
-        }
-
-        private void btnEditImage_Click(object sender, EventArgs e)
-        {
-            OpenFileDialog openFileDialog = new OpenFileDialog
-            {
-                Filter = "Image Files|*.jpg;*.jpeg;*.png;*.bmp",
-                Title = "Select an Image"
-            };
-
-            if (openFileDialog.ShowDialog() == DialogResult.OK)
-            {
-                string imagePath = openFileDialog.FileName;
-                selectedImageBytes = File.ReadAllBytes(imagePath); // Convert image to byte array
-                pictureBoxEdit.Image = Image.FromFile(imagePath); // Display new image in PictureBox
-            }
         }
     }
 }

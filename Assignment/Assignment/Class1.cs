@@ -241,43 +241,5 @@ namespace Assignment
 
         }
 
-        public void add_reservation_coordinator()
-        {
-            string database_connection_string = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\ranja\\Source\\Repos\\IOOP_2025_Assignment\\Assignment\\Assignment\\IOOP_Database.mdf;Integrated Security=True";
-            using (SqlConnection connection = new SqlConnection(database_connection_string))
-            {
-                connection.Open();
-                string insert_query = "INSERT INTO Users (Email_ID, Name, Password, Phone_Number, Roles) VALUES (@Email_ID, @Name, @Password, @Phone_number, @Roles)";
-                using (SqlCommand command = new SqlCommand(insert_query, connection))
-                {
-                    command.Parameters.AddWithValue("@Email_ID", Email);
-                    command.Parameters.AddWithValue("@Name", Name);
-                    command.Parameters.AddWithValue("@Password", Password);
-                    command.Parameters.AddWithValue("@Phone_number", Phone_number);
-                    command.Parameters.AddWithValue("@Roles", "Reservation Coordinator");
-                    command.ExecuteNonQuery();
-                }
-            }
-        }
-
-        public void add_chef()
-        {
-            string database_connection_string = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\ranja\\Source\\Repos\\IOOP_2025_Assignment\\Assignment\\Assignment\\IOOP_Database.mdf;Integrated Security=True";
-            using (SqlConnection connection = new SqlConnection(database_connection_string))
-            {
-                connection.Open();
-                string insert_query = "INSERT INTO Users (Email_ID, Name, Password, Phone_Number, Roles) VALUES (@Email_ID, @Name, @Password, @Phone_number, @Roles)";
-                using (SqlCommand command = new SqlCommand(insert_query, connection))
-                {
-                    command.Parameters.AddWithValue("@Email_ID", Email);
-                    command.Parameters.AddWithValue("@Name", Name);
-                    command.Parameters.AddWithValue("@Password", Password);
-                    command.Parameters.AddWithValue("@Phone_number", Phone_number);
-                    command.Parameters.AddWithValue("@Roles", "Chef");
-                    command.ExecuteNonQuery();
-                }
-            }
-        }
-
     }
 }

@@ -13,7 +13,7 @@ namespace Assignment.Manager
         private void Form1_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'iOOP_DatabaseDataSet1.Resrvations' table. You can move, or remove it, as needed.
-            //this.resrvationsTableAdapter.Fill(this.iOOP_DatabaseDataSet1.Resrvations);
+            this.resrvationsTableAdapter.Fill(this.iOOP_DatabaseDataSet1.Resrvations);
             // TODO: This line of code loads data into the 'iOOP_DatabaseDataSet10.Resrvations' table. You can move, or remove it, as needed.
 
         }
