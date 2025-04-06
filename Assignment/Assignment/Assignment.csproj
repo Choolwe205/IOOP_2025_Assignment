@@ -432,10 +432,6 @@
     <Content Include="IOOP_Database.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="IOOP_Database_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>IOOP_Database.mdf</DependentUpon>
-    </Content>
     <None Include="Resources\icons8-money-272.png" />
     <None Include="Resources\Screenshot 2025-03-29 174549.png" />
     <None Include="Resources\icons8-event-accepted-50.png" />
