@@ -16,7 +16,7 @@ namespace Assignment
         {
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
-                string query = "SELECT Request_ID, Email_ID, Type_of_event, Special_Requests, Number_Of_People, Start_Date, Start_Time, End_Time FROM Requests WHERE Approval = 'Pending'"; 
+                string query = "SELECT Request_ID, Email_ID, Type_of_event, Special_Requests, Number_Of_People, Start_Date, Start_Time, End_Time FROM Requests WHERE Approval = 'Pending'";
                 SqlDataAdapter adapter = new SqlDataAdapter(query, conn);
                 DataTable dt = new DataTable();
                 adapter.Fill(dt);
