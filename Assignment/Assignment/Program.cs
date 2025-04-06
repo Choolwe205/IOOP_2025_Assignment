@@ -18,13 +18,7 @@ namespace Assignment
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-
             Application.Run(new CustomerMainPanel("choolwe205@gmail.com"));
-
-            Application.Run(new Main_Dashboard("mwilachibesa@gmail.com"));
-
-            Application.Run(new ChefPage());
-
         }
     }
 }
