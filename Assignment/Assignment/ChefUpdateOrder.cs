@@ -10,19 +10,15 @@ using System.Windows.Forms;
 
 namespace Assignment
 {
-    public partial class Orders_controls : UserControl
+    public partial class ChefUpdateOrder : Form
     {
-        int quantity;
-
-        public Orders_controls()
+        public ChefUpdateOrder()
         {
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void groupBox1_Enter(object sender, EventArgs e)
         {
-            quantity += 1;
-            button1.Text = "Add   " + quantity.ToString(); 
 
         }
     }

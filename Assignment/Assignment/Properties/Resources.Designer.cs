@@ -243,6 +243,16 @@ namespace Assignment.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_money_272 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-money-272", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_order_100 {
             get {
                 object obj = ResourceManager.GetObject("icons8-order-100", resourceCulture);
@@ -466,6 +476,16 @@ namespace Assignment.Properties {
         internal static System.Drawing.Bitmap pretttypassion {
             get {
                 object obj = ResourceManager.GetObject("pretttypassion", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screenshot_2025_03_29_174549 {
+            get {
+                object obj = ResourceManager.GetObject("Screenshot 2025-03-29 174549", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

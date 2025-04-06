@@ -17,23 +17,16 @@ namespace Assignment
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void btnViewOrders_Click(object sender, EventArgs e)
         {
-
+            ChefViewOrders chefViewOrders = new ChefViewOrders();
+            chefViewOrders.Show();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnIngredients_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void ChefPage_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnInventory_Click(object sender, EventArgs e)
-        {
+            ChefIngredients chefIngredients = new ChefIngredients();
+            chefIngredients.Show();
         }
     }
 }

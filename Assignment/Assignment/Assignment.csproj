@@ -77,11 +77,35 @@
     <Compile Include="Administrator_2.Designer.cs">
       <DependentUpon>Administrator_2.cs</DependentUpon>
     </Compile>
+    <Compile Include="ChefIngredients.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChefIngredients.Designer.cs">
+      <DependentUpon>ChefIngredients.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChefPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChefPage.Designer.cs">
+      <DependentUpon>ChefPage.cs</DependentUpon>
+    </Compile>
     <Compile Include="Chefs.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Chefs.Designer.cs">
       <DependentUpon>Chefs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChefUpdateOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChefUpdateOrder.Designer.cs">
+      <DependentUpon>ChefUpdateOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChefViewOrders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChefViewOrders.Designer.cs">
+      <DependentUpon>ChefViewOrders.cs</DependentUpon>
     </Compile>
     <Compile Include="Class1.cs" />
     <Compile Include="Class2.cs" />
@@ -176,7 +200,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+<<<<<<< HEAD
     <Compile Include="Requests.cs" />
+=======
+    <Compile Include="Request.cs" />
+    <Compile Include="Reservation.cs" />
+>>>>>>> bf2eb99ddeb26b81d92b39f6931456da329eb1d8
     <Compile Include="ReservationCustomer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -225,6 +254,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Administrator_2.resx">
       <DependentUpon>Administrator_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChefIngredients.resx">
+      <DependentUpon>ChefIngredients.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChefPage.resx">
+      <DependentUpon>ChefPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChefUpdateOrder.resx">
+      <DependentUpon>ChefUpdateOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChefViewOrders.resx">
+      <DependentUpon>ChefViewOrders.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Food_Profile.resx">
       <DependentUpon>Food_Profile.cs</DependentUpon>
@@ -337,6 +378,8 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>IOOP_Database.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\icons8-money-272.png" />
+    <None Include="Resources\Screenshot 2025-03-29 174549.png" />
     <None Include="Resources\icons8-event-accepted-50.png" />
     <None Include="Resources\icons8-close-261.png" />
     <None Include="Resources\icons8-reservation-1001.png" />

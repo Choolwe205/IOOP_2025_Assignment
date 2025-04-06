@@ -10,20 +10,11 @@ using System.Windows.Forms;
 
 namespace Assignment
 {
-    public partial class Orders_controls : UserControl
+    public partial class Orders : UserControl
     {
-        int quantity;
-
-        public Orders_controls()
+        public Orders()
         {
             InitializeComponent();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            quantity += 1;
-            button1.Text = "Add   " + quantity.ToString(); 
-
         }
     }
 }
