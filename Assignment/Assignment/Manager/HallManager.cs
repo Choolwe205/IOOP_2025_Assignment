@@ -7,12 +7,12 @@ namespace Assignment.Manager
 {
     public class HallManager
     {
-        private string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\ranja\Source\Repos\IOOP_2025_Assignment\Assignment\Assignment\IOOP_Database.mdf;Integrated Security=True";
+        private string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\hp\Source\Repos\IOOP_2025_Assignment\Assignment\Assignment\IOOP_Database.mdf;Integrated Security=True";
         public DataTable GetAllHalls()
         {
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
-                string query = "SELECT HallID, Capacity, Availability FROM Halls"; // Explicitly include HallID
+                string query = "SELECT Hall_ID, Capacity, Availability FROM Halls"; // Explicitly include HallID
                 SqlDataAdapter adapter = new SqlDataAdapter(query, conn);
                 DataTable dt = new DataTable();
                 adapter.Fill(dt);
