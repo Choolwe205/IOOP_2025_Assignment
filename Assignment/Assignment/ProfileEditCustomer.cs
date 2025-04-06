@@ -26,5 +26,15 @@ namespace Assignment
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string email_id="choolwe205@gmail.com";
+            ProfileEditClass view=new ProfileEditClass("","","");
+            string details = view.ViewProfileDetails(email_id);
+            details = details.Trim();
+            label9.Text=details;
+
+        }
     }
 }

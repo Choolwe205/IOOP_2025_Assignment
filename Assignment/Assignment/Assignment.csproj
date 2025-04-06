@@ -184,6 +184,7 @@
     <Compile Include="Orders_controls.Designer.cs">
       <DependentUpon>Orders_controls.cs</DependentUpon>
     </Compile>
+    <Compile Include="ProfileEditClass.cs" />
     <Compile Include="ProfileEditCustomer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -218,6 +219,7 @@
     <Compile Include="Sign_up_form.Designer.cs">
       <DependentUpon>Sign_up_form.cs</DependentUpon>
     </Compile>
+    <Compile Include="ViewOrderClass.cs" />
     <Compile Include="ViewOrderCustomer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -236,6 +238,7 @@
     <Compile Include="ViewReservationCustomer.Designer.cs">
       <DependentUpon>ViewReservationCustomer.cs</DependentUpon>
     </Compile>
+    <Compile Include="View_ReservationClass.cs" />
     <EmbeddedResource Include="Admininstrator.resx">
       <DependentUpon>Admininstrator.cs</DependentUpon>
     </EmbeddedResource>
@@ -362,6 +365,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>IOOP_Database.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\download2.jpeg" />
+    <None Include="Resources\download1.jpeg" />
+    <None Include="Resources\download.jpeg" />
     <None Include="Resources\icons8-money-272.png" />
     <None Include="Resources\Screenshot 2025-03-29 174549.png" />
     <None Include="Resources\icons8-event-accepted-50.png" />
