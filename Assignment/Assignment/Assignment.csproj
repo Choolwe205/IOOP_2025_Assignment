@@ -191,12 +191,6 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Requests.cs" />
-    <Compile Include="ReservationCustomer.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ReservationCustomer.Designer.cs">
-      <DependentUpon>ReservationCustomer.cs</DependentUpon>
-    </Compile>
     <Compile Include="Resources\CustomerPanel.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -216,18 +210,6 @@
       <DependentUpon>Sign_up_form.cs</DependentUpon>
     </Compile>
     <Compile Include="Verifying.cs" />
-    <Compile Include="ViewOrderCustomer.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ViewOrderCustomer.Designer.cs">
-      <DependentUpon>ViewOrderCustomer.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ViewReservationCustomer.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ViewReservationCustomer.Designer.cs">
-      <DependentUpon>ViewReservationCustomer.cs</DependentUpon>
-    </Compile>
     <Compile Include="View_Requests_Coordinator.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -294,12 +276,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Sign_up_form.resx">
       <DependentUpon>Sign_up_form.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ViewOrderCustomer.resx">
-      <DependentUpon>ViewOrderCustomer.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ViewReservationCustomer.resx">
-      <DependentUpon>ViewReservationCustomer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View_Requests_Coordinator.resx">
       <DependentUpon>View_Requests_Coordinator.cs</DependentUpon>
