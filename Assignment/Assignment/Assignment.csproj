@@ -105,9 +105,6 @@
     <Compile Include="Class1.cs" />
     <Compile Include="Class2.cs" />
     <Compile Include="EditDeleteReservation.cs" />
-    <Compile Include="Food_Profile.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
     <Compile Include="FeedbackForm.Designer.cs">
       <DependentUpon>FeedbackForm.cs</DependentUpon>
     </Compile>
