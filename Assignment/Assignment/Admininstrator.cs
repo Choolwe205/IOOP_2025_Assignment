@@ -38,6 +38,7 @@ namespace Assignment
 
         private void sales_btn_Click(object sender, EventArgs e)
         {
+            Main_view_pannel.Controls.Clear();
             Sales_admin sales_form = new Sales_admin();
             sales_form.TopLevel = false;
             Main_view_pannel.Controls.Add(sales_form);
@@ -89,7 +90,12 @@ namespace Assignment
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-
+            Main_view_pannel.Controls.Clear();
+            Form2 form2 = new Form2(Email_ID_lbl.Text);
+            form2.TopLevel = false;
+            Main_view_pannel.Controls.Add(form2);
+            form2.BringToFront();
+            form2.Show();
         }
 
         private void SideBar_Timer_Tick(object sender, EventArgs e)
@@ -132,7 +138,63 @@ namespace Assignment
 
         private void Admininstrator_Load(object sender, EventArgs e)
         {
+            
+        }
 
+        private void Main_view_pannel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Main_view_pannel.Controls.Clear();
+            Managers_admin managers_admin = new Managers_admin(2);
+            managers_admin.TopLevel = false;
+            Main_view_pannel.Controls.Add(managers_admin);
+            managers_admin.BringToFront();
+            managers_admin.Show();
+
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            Main_view_pannel.Controls.Clear();
+            Managers_admin managers_admin = new Managers_admin(4);
+            managers_admin.TopLevel = false;
+            Main_view_pannel.Controls.Add(managers_admin);
+            managers_admin.BringToFront();
+            managers_admin.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Main_view_pannel.Controls.Clear();
+            Managers_admin managers_admin = new Managers_admin(3);
+            managers_admin.TopLevel = false;
+            Main_view_pannel.Controls.Add(managers_admin);
+            managers_admin.BringToFront();
+            managers_admin.Show();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Main_view_pannel.Controls.Clear();
+            Managers_admin managers_admin = new Managers_admin(5);
+            managers_admin.TopLevel = false;
+            Main_view_pannel.Controls.Add(managers_admin);
+            managers_admin.BringToFront();
+            managers_admin.Show();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Main_view_pannel.Controls.Clear();
+            FeedbackForm Form = new FeedbackForm();
+            Form.TopLevel = false;
+            Main_view_pannel.Controls.Add(Form);
+            Form.BringToFront();
+            Form.Show();
         }
     }
 }

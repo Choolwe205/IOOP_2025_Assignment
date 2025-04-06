@@ -26,31 +26,36 @@ namespace Assignment
             string page = login.Login_algorithm();
             if (page == "Customer")
             {
-                MessageBox.Show("You are Customer");
+                
                 return counter = 19;
 
             }
             else if (page == "Chef")
             {
-                MessageBox.Show("You are a Chef");
+                ChefPage chefpage = new ChefPage(txtUsername.Text);
+                chefpage.Show();
+                this.Hide();
                 return counter = 19;
             }
             else if (page == "Reservation Coordinator")
             {
-                Main_Dashboard main_Dashboard = new Main_Dashboard(txtUsername.Text);
-                main_Dashboard.Show();
+                
+                
+                this.Hide();
                 return counter = 19;
             }
             else if (page == "Manager")
             {
                 Form1 form1 = new Form1(txtUsername.Text);
                 form1.Show();
+                this.Hide();
                 return counter = 19;
             }
             else if (page == "Admin")
             {
                 Admininstrator admin = new Admininstrator(txtUsername.Text);
                 admin.Show();
+                this.Hide();
                 return counter = 19;
             }
             else if (page == "Doesn't Exist")
@@ -115,6 +120,11 @@ namespace Assignment
             this.Hide();
             
             
+        }
+
+        private void txtPassword_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

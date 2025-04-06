@@ -15,6 +15,8 @@ namespace Assignment.Manager
 
         private void Form3_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'iOOP_DatabaseDataSet4.Halls' table. You can move, or remove it, as needed.
+            //this.hallsTableAdapter.Fill(this.iOOP_DatabaseDataSet4.Halls);
             // TODO: This line of code loads data into the 'iOOP_DatabaseDataSet2.Halls' table. You can move, or remove it, as needed.
             LoadHalls();
         }

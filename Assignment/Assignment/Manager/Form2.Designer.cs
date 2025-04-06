@@ -37,6 +37,9 @@
             this.menuBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.menuBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.pnlAddItem = new System.Windows.Forms.Panel();
+            this.btnSelectImage = new System.Windows.Forms.Button();
+            this.pictureBoxAdd = new System.Windows.Forms.PictureBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.btnSaveAdd = new System.Windows.Forms.Button();
             this.txtPrice1 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -45,7 +48,10 @@
             this.txtAddItem = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.pnlEditItem = new System.Windows.Forms.Panel();
+            this.btnEditImage = new System.Windows.Forms.Button();
             this.txtSaveEdit = new System.Windows.Forms.Button();
+            this.pictureBoxEdit = new System.Windows.Forms.PictureBox();
+            this.label10 = new System.Windows.Forms.Label();
             this.txtEditPrice = new System.Windows.Forms.TextBox();
             this.txtEditID = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -59,24 +65,33 @@
             this.menuBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.menuBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
             this.dgvMenu = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.menuBindingSource6 = new System.Windows.Forms.BindingSource(this.components);
             this.menuBindingSource5 = new System.Windows.Forms.BindingSource(this.components);
             this.iOOP_DatabaseDataSet = new Assignment.IOOP_DatabaseDataSet();
             this.menuBindingSource4 = new System.Windows.Forms.BindingSource(this.components);
             this.menuTableAdapter = new Assignment.IOOP_DatabaseDataSetTableAdapters.MenuTableAdapter();
+            this.iOOP_DatabaseDataSet3 = new Assignment.IOOP_DatabaseDataSet3();
+            this.menuBindingSource7 = new System.Windows.Forms.BindingSource(this.components);
+            this.Food_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Picture = new System.Windows.Forms.DataGridViewImageColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.menuBindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.menuBindingSource)).BeginInit();
             this.pnlAddItem.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAdd)).BeginInit();
             this.pnlEditItem.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxEdit)).BeginInit();
             this.pnlDeleteItem.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.menuBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.menuBindingSource3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMenu)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.menuBindingSource6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.menuBindingSource5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iOOP_DatabaseDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.menuBindingSource4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iOOP_DatabaseDataSet3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.menuBindingSource7)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -141,6 +156,9 @@
             // pnlAddItem
             // 
             this.pnlAddItem.BackColor = System.Drawing.Color.DarkOrange;
+            this.pnlAddItem.Controls.Add(this.btnSelectImage);
+            this.pnlAddItem.Controls.Add(this.pictureBoxAdd);
+            this.pnlAddItem.Controls.Add(this.label9);
             this.pnlAddItem.Controls.Add(this.btnSaveAdd);
             this.pnlAddItem.Controls.Add(this.txtPrice1);
             this.pnlAddItem.Controls.Add(this.label4);
@@ -153,11 +171,41 @@
             this.pnlAddItem.Size = new System.Drawing.Size(283, 409);
             this.pnlAddItem.TabIndex = 6;
             this.pnlAddItem.Visible = false;
-            this.pnlAddItem.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlAddItem_Paint);
+            // 
+            // btnSelectImage
+            // 
+            this.btnSelectImage.Location = new System.Drawing.Point(110, 208);
+            this.btnSelectImage.Name = "btnSelectImage";
+            this.btnSelectImage.Size = new System.Drawing.Size(121, 23);
+            this.btnSelectImage.TabIndex = 9;
+            this.btnSelectImage.Text = "Select Image";
+            this.btnSelectImage.UseVisualStyleBackColor = true;
+            this.btnSelectImage.Click += new System.EventHandler(this.btnSelectImage_Click);
+            // 
+            // pictureBoxAdd
+            // 
+            this.pictureBoxAdd.BackColor = System.Drawing.Color.White;
+            this.pictureBoxAdd.Location = new System.Drawing.Point(110, 151);
+            this.pictureBoxAdd.Name = "pictureBoxAdd";
+            this.pictureBoxAdd.Size = new System.Drawing.Size(100, 50);
+            this.pictureBoxAdd.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxAdd.TabIndex = 8;
+            this.pictureBoxAdd.TabStop = false;
+            this.pictureBoxAdd.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label9.Location = new System.Drawing.Point(4, 163);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(93, 16);
+            this.label9.TabIndex = 7;
+            this.label9.Text = "Upload Image";
             // 
             // btnSaveAdd
             // 
-            this.btnSaveAdd.Location = new System.Drawing.Point(86, 271);
+            this.btnSaveAdd.Location = new System.Drawing.Point(87, 322);
             this.btnSaveAdd.Name = "btnSaveAdd";
             this.btnSaveAdd.Size = new System.Drawing.Size(75, 23);
             this.btnSaveAdd.TabIndex = 6;
@@ -167,7 +215,7 @@
             // 
             // txtPrice1
             // 
-            this.txtPrice1.Location = new System.Drawing.Point(110, 175);
+            this.txtPrice1.Location = new System.Drawing.Point(131, 281);
             this.txtPrice1.Name = "txtPrice1";
             this.txtPrice1.Size = new System.Drawing.Size(100, 22);
             this.txtPrice1.TabIndex = 5;
@@ -177,7 +225,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft YaHei UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label4.Location = new System.Drawing.Point(42, 175);
+            this.label4.Location = new System.Drawing.Point(42, 284);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(39, 19);
             this.label4.TabIndex = 4;
@@ -205,6 +253,7 @@
             // 
             this.txtAddItem.Location = new System.Drawing.Point(110, 55);
             this.txtAddItem.Name = "txtAddItem";
+            this.txtAddItem.ReadOnly = true;
             this.txtAddItem.Size = new System.Drawing.Size(100, 22);
             this.txtAddItem.TabIndex = 1;
             // 
@@ -222,7 +271,10 @@
             // pnlEditItem
             // 
             this.pnlEditItem.BackColor = System.Drawing.Color.DarkOrange;
+            this.pnlEditItem.Controls.Add(this.btnEditImage);
             this.pnlEditItem.Controls.Add(this.txtSaveEdit);
+            this.pnlEditItem.Controls.Add(this.pictureBoxEdit);
+            this.pnlEditItem.Controls.Add(this.label10);
             this.pnlEditItem.Controls.Add(this.txtEditPrice);
             this.pnlEditItem.Controls.Add(this.txtEditID);
             this.pnlEditItem.Controls.Add(this.label5);
@@ -235,9 +287,19 @@
             this.pnlEditItem.TabIndex = 7;
             this.pnlEditItem.Visible = false;
             // 
+            // btnEditImage
+            // 
+            this.btnEditImage.Location = new System.Drawing.Point(110, 220);
+            this.btnEditImage.Name = "btnEditImage";
+            this.btnEditImage.Size = new System.Drawing.Size(121, 23);
+            this.btnEditImage.TabIndex = 12;
+            this.btnEditImage.Text = "Edit Image";
+            this.btnEditImage.UseVisualStyleBackColor = true;
+            this.btnEditImage.Click += new System.EventHandler(this.btnEditImage_Click);
+            // 
             // txtSaveEdit
             // 
-            this.txtSaveEdit.Location = new System.Drawing.Point(110, 271);
+            this.txtSaveEdit.Location = new System.Drawing.Point(110, 333);
             this.txtSaveEdit.Name = "txtSaveEdit";
             this.txtSaveEdit.Size = new System.Drawing.Size(75, 23);
             this.txtSaveEdit.TabIndex = 7;
@@ -245,9 +307,29 @@
             this.txtSaveEdit.UseVisualStyleBackColor = true;
             this.txtSaveEdit.Click += new System.EventHandler(this.txtSaveEdit_Click);
             // 
+            // pictureBoxEdit
+            // 
+            this.pictureBoxEdit.BackColor = System.Drawing.Color.White;
+            this.pictureBoxEdit.Location = new System.Drawing.Point(110, 163);
+            this.pictureBoxEdit.Name = "pictureBoxEdit";
+            this.pictureBoxEdit.Size = new System.Drawing.Size(100, 50);
+            this.pictureBoxEdit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxEdit.TabIndex = 11;
+            this.pictureBoxEdit.TabStop = false;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label10.Location = new System.Drawing.Point(4, 175);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(71, 16);
+            this.label10.TabIndex = 10;
+            this.label10.Text = "Edit Image";
+            // 
             // txtEditPrice
             // 
-            this.txtEditPrice.Location = new System.Drawing.Point(110, 175);
+            this.txtEditPrice.Location = new System.Drawing.Point(110, 281);
             this.txtEditPrice.Name = "txtEditPrice";
             this.txtEditPrice.Size = new System.Drawing.Size(100, 22);
             this.txtEditPrice.TabIndex = 12;
@@ -263,7 +345,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label5.Location = new System.Drawing.Point(42, 175);
+            this.label5.Location = new System.Drawing.Point(42, 281);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(38, 16);
             this.label5.TabIndex = 11;
@@ -350,10 +432,11 @@
             this.dgvMenu.AutoGenerateColumns = false;
             this.dgvMenu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvMenu.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
+            this.Food_ID,
+            this.Picture,
             this.dataGridViewTextBoxColumn2,
             this.dataGridViewTextBoxColumn3});
-            this.dgvMenu.DataSource = this.menuBindingSource5;
+            this.dgvMenu.DataSource = this.menuBindingSource7;
             this.dgvMenu.Location = new System.Drawing.Point(12, 233);
             this.dgvMenu.Name = "dgvMenu";
             this.dgvMenu.ReadOnly = true;
@@ -361,34 +444,13 @@
             this.dgvMenu.RowTemplate.Height = 24;
             this.dgvMenu.Size = new System.Drawing.Size(547, 236);
             this.dgvMenu.TabIndex = 9;
-            this.dgvMenu.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvMenu_CellContentClick);
             // 
-            // dataGridViewTextBoxColumn1
+            // menuBindingSource6
             // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "FoodID";
-            this.dataGridViewTextBoxColumn1.HeaderText = "FoodID";
-            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            this.dataGridViewTextBoxColumn1.Width = 125;
+            this.menuBindingSource6.DataMember = "Menu";
             // 
-            // dataGridViewTextBoxColumn2
+            // iOOP_DatabaseDataSet2
             // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "Description";
-            this.dataGridViewTextBoxColumn2.HeaderText = "Description";
-            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.ReadOnly = true;
-            this.dataGridViewTextBoxColumn2.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "Price";
-            this.dataGridViewTextBoxColumn3.HeaderText = "Price";
-            this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.ReadOnly = true;
-            this.dataGridViewTextBoxColumn3.Width = 125;
             // 
             // menuBindingSource5
             // 
@@ -407,6 +469,60 @@
             // menuTableAdapter
             // 
             this.menuTableAdapter.ClearBeforeFill = true;
+            // 
+            // menuTableAdapter1
+            // 
+            //this.menuTableAdapter1.ClearBeforeFill = true;
+            // 
+            // iOOP_DatabaseDataSet3
+            // 
+            this.iOOP_DatabaseDataSet3.DataSetName = "IOOP_DatabaseDataSet3";
+            this.iOOP_DatabaseDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // menuBindingSource7
+            // 
+            this.menuBindingSource7.DataMember = "Menu";
+            this.menuBindingSource7.DataSource = this.iOOP_DatabaseDataSet3;
+            // 
+            // menuTableAdapter2
+            // 
+            //this.menuTableAdapter2.ClearBeforeFill = true;
+            // 
+            // Food_ID
+            // 
+            this.Food_ID.DataPropertyName = "Food_ID";
+            this.Food_ID.HeaderText = "Food_ID";
+            this.Food_ID.MinimumWidth = 6;
+            this.Food_ID.Name = "Food_ID";
+            this.Food_ID.ReadOnly = true;
+            this.Food_ID.Width = 125;
+            // 
+            // Picture
+            // 
+            this.Picture.DataPropertyName = "Picture";
+            this.Picture.HeaderText = "Picture";
+            this.Picture.MinimumWidth = 6;
+            this.Picture.Name = "Picture";
+            this.Picture.ReadOnly = true;
+            this.Picture.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "Description";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Description";
+            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
+            this.dataGridViewTextBoxColumn2.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "Price";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Price";
+            this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.ReadOnly = true;
+            this.dataGridViewTextBoxColumn3.Width = 125;
             // 
             // Form2
             // 
@@ -430,18 +546,23 @@
             ((System.ComponentModel.ISupportInitialize)(this.menuBindingSource)).EndInit();
             this.pnlAddItem.ResumeLayout(false);
             this.pnlAddItem.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAdd)).EndInit();
             this.pnlEditItem.ResumeLayout(false);
             this.pnlEditItem.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxEdit)).EndInit();
             this.pnlDeleteItem.ResumeLayout(false);
             this.pnlDeleteItem.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.menuBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.menuBindingSource3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMenu)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.menuBindingSource6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.menuBindingSource5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iOOP_DatabaseDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.menuBindingSource4)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iOOP_DatabaseDataSet3)).EndInit();
+            //((System.ComponentModel.ISupportInitialize)(this.menuBindingSource7)).EndInit();
+            //this.ResumeLayout(false);
+            //this.PerformLayout();
 
         }
 
@@ -483,7 +604,17 @@
         private IOOP_DatabaseDataSet iOOP_DatabaseDataSet;
         private System.Windows.Forms.BindingSource menuBindingSource5;
         private IOOP_DatabaseDataSetTableAdapters.MenuTableAdapter menuTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.PictureBox pictureBoxAdd;
+        private System.Windows.Forms.Button btnSelectImage;
+        private System.Windows.Forms.BindingSource menuBindingSource6;
+        private System.Windows.Forms.Button btnEditImage;
+        private System.Windows.Forms.PictureBox pictureBoxEdit;
+        private System.Windows.Forms.Label label10;
+        private IOOP_DatabaseDataSet3 iOOP_DatabaseDataSet3;
+        private System.Windows.Forms.BindingSource menuBindingSource7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Food_ID;
+        private System.Windows.Forms.DataGridViewImageColumn Picture;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
     }

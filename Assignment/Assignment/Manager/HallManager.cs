@@ -12,7 +12,7 @@ namespace Assignment.Manager
         {
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
-                string query = "SELECT HallID, Capacity, Availability FROM Halls"; // Explicitly include HallID
+                string query = "SELECT Hall_ID, Capacity, Availability FROM Halls"; // Explicitly include HallID
                 SqlDataAdapter adapter = new SqlDataAdapter(query, conn);
                 DataTable dt = new DataTable();
                 adapter.Fill(dt);
@@ -21,12 +21,12 @@ namespace Assignment.Manager
         }
         public DataTable GetHallByID(int hallID)
         {
-            string query = "SELECT * FROM Halls WHERE HallID = @HallID"; // Ensure correct column name
+            string query = "SELECT * FROM Halls WHERE Hall_ID = @Hall_ID"; // Ensure correct column name
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
                 using (SqlCommand cmd = new SqlCommand(query, conn))
                 {
-                    cmd.Parameters.AddWithValue("@HallID", hallID);
+                    cmd.Parameters.AddWithValue("@Hall_ID", hallID);
                     SqlDataAdapter adapter = new SqlDataAdapter(cmd);
                     DataTable dt = new DataTable();
                     adapter.Fill(dt);
@@ -56,9 +56,9 @@ namespace Assignment.Manager
         {
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
-                string query = "UPDATE Halls SET Capacity = @Capacity, Availability = @Availability WHERE HallID = @HallID";
+                string query = "UPDATE Halls SET Capacity = @Capacity, Availability = @Availability WHERE Hall_ID = @Hall_ID";
                 SqlCommand cmd = new SqlCommand(query, conn);
-                cmd.Parameters.AddWithValue("@HallID", hallID);
+                cmd.Parameters.AddWithValue("@Hall_ID", hallID);
                 cmd.Parameters.AddWithValue("@Capacity", capacity);
                 cmd.Parameters.AddWithValue("@Availability", availability);
 
@@ -72,9 +72,9 @@ namespace Assignment.Manager
         {
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
-                string query = "DELETE FROM Halls WHERE HallID = @HallID";
+                string query = "DELETE FROM Halls WHERE Hall_ID = @Hall_ID";
                 SqlCommand cmd = new SqlCommand(query, conn);
-                cmd.Parameters.AddWithValue("@HallID", hallID);
+                cmd.Parameters.AddWithValue("@Hall_ID", hallID);
 
                 conn.Open();
                 cmd.ExecuteNonQuery();

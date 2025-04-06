@@ -35,12 +35,8 @@
             this.btnEditHall = new System.Windows.Forms.Button();
             this.btnDeleteHall = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.hallIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.capacityDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.availabilityDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.hallsBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.hallsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-
             this.panelAdd = new System.Windows.Forms.Panel();
             this.btnSaveAdd = new System.Windows.Forms.Button();
             this.comboAvailability1 = new System.Windows.Forms.ComboBox();
@@ -62,7 +58,11 @@
             this.txtHallID3 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.hallsBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-
+            this.iOOP_DatabaseDataSet4 = new Assignment.IOOP_DatabaseDataSet4();
+            this.hallsBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hallsBindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hallsBindingSource)).BeginInit();
@@ -70,6 +70,8 @@
             this.panelEdit.SuspendLayout();
             this.panelDelete.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.hallsBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iOOP_DatabaseDataSet4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hallsBindingSource3)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -130,10 +132,10 @@
             this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.hallIDDataGridViewTextBoxColumn,
-            this.capacityDataGridViewTextBoxColumn,
-            this.availabilityDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.hallsBindingSource2;
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3});
+            this.dataGridView1.DataSource = this.hallsBindingSource3;
             this.dataGridView1.Location = new System.Drawing.Point(22, 221);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
@@ -143,51 +145,13 @@
             this.dataGridView1.TabIndex = 5;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
-            // hallIDDataGridViewTextBoxColumn
-            // 
-            this.hallIDDataGridViewTextBoxColumn.DataPropertyName = "HallID";
-            this.hallIDDataGridViewTextBoxColumn.HeaderText = "HallID";
-            this.hallIDDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.hallIDDataGridViewTextBoxColumn.Name = "hallIDDataGridViewTextBoxColumn";
-            this.hallIDDataGridViewTextBoxColumn.ReadOnly = true;
-            this.hallIDDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // capacityDataGridViewTextBoxColumn
-            // 
-            this.capacityDataGridViewTextBoxColumn.DataPropertyName = "Capacity";
-            this.capacityDataGridViewTextBoxColumn.HeaderText = "Capacity";
-            this.capacityDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.capacityDataGridViewTextBoxColumn.Name = "capacityDataGridViewTextBoxColumn";
-            this.capacityDataGridViewTextBoxColumn.ReadOnly = true;
-            this.capacityDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // availabilityDataGridViewTextBoxColumn
-            // 
-            this.availabilityDataGridViewTextBoxColumn.DataPropertyName = "Availability";
-            this.availabilityDataGridViewTextBoxColumn.HeaderText = "Availability";
-            this.availabilityDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.availabilityDataGridViewTextBoxColumn.Name = "availabilityDataGridViewTextBoxColumn";
-            this.availabilityDataGridViewTextBoxColumn.ReadOnly = true;
-            this.availabilityDataGridViewTextBoxColumn.Width = 125;
-            // 
             // hallsBindingSource2
             // 
             this.hallsBindingSource2.DataMember = "Halls";
             // 
-            // iOOP_DatabaseDataSet2
-            // 
-
-            // 
             // hallsBindingSource
             // 
             this.hallsBindingSource.DataMember = "Halls";
-            // 
-            // iOOP_DatabaseDataSet
-            // 
-
-            // 
-            // hallsTableAdapter
-            // 
             // 
             // panelAdd
             // 
@@ -398,19 +362,49 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "Hall ID";
             // 
-            // iOOP_DatabaseDataSet1
-            // 
-
-            // 
             // hallsBindingSource1
             // 
             this.hallsBindingSource1.DataMember = "Halls";
             // 
-            // hallsTableAdapter1
+            // iOOP_DatabaseDataSet4
+            // 
+            this.iOOP_DatabaseDataSet4.DataSetName = "IOOP_DatabaseDataSet4";
+            this.iOOP_DatabaseDataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // hallsBindingSource3
+            // 
+            this.hallsBindingSource3.DataMember = "Halls";
+            this.hallsBindingSource3.DataSource = this.iOOP_DatabaseDataSet4;
+            // 
+            // hallsTableAdapter
             // 
             // 
-            // hallsTableAdapter2
+            // dataGridViewTextBoxColumn1
             // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "Hall_ID";
+            this.dataGridViewTextBoxColumn1.HeaderText = "Hall_ID";
+            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            this.dataGridViewTextBoxColumn1.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "Capacity";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Capacity";
+            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
+            this.dataGridViewTextBoxColumn2.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "Availability";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Availability";
+            this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.ReadOnly = true;
+            this.dataGridViewTextBoxColumn3.Width = 125;
             // 
             // Form3
             // 
@@ -440,8 +434,10 @@
             this.panelDelete.ResumeLayout(false);
             this.panelDelete.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.hallsBindingSource1)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iOOP_DatabaseDataSet4)).EndInit();
+            //((System.ComponentModel.ISupportInitialize)(this.hallsBindingSource3)).EndInit();
+            //this.ResumeLayout(false);
+            //this.PerformLayout();
 
         }
 
@@ -478,5 +474,10 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn hallIDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn capacityDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn availabilityDataGridViewTextBoxColumn;
+        private IOOP_DatabaseDataSet4 iOOP_DatabaseDataSet4;
+        private System.Windows.Forms.BindingSource hallsBindingSource3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
     }
 }

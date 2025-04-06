@@ -44,7 +44,9 @@ namespace Assignment
 
         private void Return_Click(object sender, EventArgs e)
         {
-            
+            FormLogin form = new FormLogin();
+            form.ShowDialog();
+            this.Hide();
         }
 
         private bool Check_and_add_credentials(string Email, string Name, string Password, string Phone_number, string Password_again)
@@ -105,8 +107,7 @@ namespace Assignment
         {
 
 
-            Form2 form2 = new Form2();
-            form2.Show();
+            
         }
 
         private void Sign_up_form_Load(object sender, EventArgs e)
