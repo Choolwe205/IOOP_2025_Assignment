@@ -200,12 +200,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-<<<<<<< HEAD
     <Compile Include="Requests.cs" />
-=======
-    <Compile Include="Request.cs" />
-    <Compile Include="Reservation.cs" />
->>>>>>> bf2eb99ddeb26b81d92b39f6931456da329eb1d8
     <Compile Include="ReservationCustomer.cs">
       <SubType>Form</SubType>
     </Compile>
