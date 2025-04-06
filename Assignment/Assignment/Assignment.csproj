@@ -193,6 +193,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+<<<<<<< HEAD
     <Compile Include="Request.cs" />
     <Compile Include="Reservation.cs" />
     <Compile Include="ReservationCustomer.cs">
@@ -201,6 +202,9 @@
     <Compile Include="ReservationCustomer.Designer.cs">
       <DependentUpon>ReservationCustomer.cs</DependentUpon>
     </Compile>
+=======
+    <Compile Include="Requests.cs" />
+>>>>>>> 8a823e2d1baac09cf0d645422ca31ba959f6b9c9
     <Compile Include="Resources\CustomerPanel.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -219,6 +223,7 @@
     <Compile Include="Sign_up_form.Designer.cs">
       <DependentUpon>Sign_up_form.cs</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="ViewOrderClass.cs" />
     <Compile Include="ViewOrderCustomer.cs">
       <SubType>Form</SubType>
@@ -239,6 +244,15 @@
       <DependentUpon>ViewReservationCustomer.cs</DependentUpon>
     </Compile>
     <Compile Include="View_ReservationClass.cs" />
+=======
+    <Compile Include="Verifying.cs" />
+    <Compile Include="View_Requests_Coordinator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View_Requests_Coordinator.Designer.cs">
+      <DependentUpon>View_Requests_Coordinator.cs</DependentUpon>
+    </Compile>
+>>>>>>> 8a823e2d1baac09cf0d645422ca31ba959f6b9c9
     <EmbeddedResource Include="Admininstrator.resx">
       <DependentUpon>Admininstrator.cs</DependentUpon>
     </EmbeddedResource>
@@ -312,6 +326,7 @@
     <EmbeddedResource Include="Sign_up_form.resx">
       <DependentUpon>Sign_up_form.cs</DependentUpon>
     </EmbeddedResource>
+<<<<<<< HEAD
     <EmbeddedResource Include="ViewOrderCustomer.resx">
       <DependentUpon>ViewOrderCustomer.cs</DependentUpon>
     </EmbeddedResource>
@@ -320,6 +335,10 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ViewReservationCustomer.resx">
       <DependentUpon>ViewReservationCustomer.cs</DependentUpon>
+=======
+    <EmbeddedResource Include="View_Requests_Coordinator.resx">
+      <DependentUpon>View_Requests_Coordinator.cs</DependentUpon>
+>>>>>>> 8a823e2d1baac09cf0d645422ca31ba959f6b9c9
     </EmbeddedResource>
     <None Include="IOOP_DatabaseDataSet14.xsc">
       <DependentUpon>IOOP_DatabaseDataSet14.xsd</DependentUpon>
