@@ -154,5 +154,10 @@ namespace Assignment.Resources
             mainpanel.Controls.Add(profileEditCustomer);
             profileEditCustomer.Show();
         }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

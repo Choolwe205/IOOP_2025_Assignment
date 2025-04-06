@@ -18,6 +18,7 @@ namespace Assignment
             Application.SetCompatibleTextRenderingDefault(false);
 
             Application.Run(new Main_Dashboard("mwilachibesa@gmail.com"));
+            Application.Run(new CustomerMainPanel());
 
            
 
